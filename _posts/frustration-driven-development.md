@@ -20,3 +20,4 @@ Take aways
 - Consider frustration together with mainteinability when designing architectures
 - Doesn't exist code without frustration
 - Embrace frustration as a way to improvement
+- What source of frustration can you spot in your day-to-day work?
