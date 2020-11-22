@@ -3,8 +3,8 @@ layout: post
 title: "My multiseat configuration on Windows or How to train neural networks and play Call of Duty at the same time"
 ---
 
-Some months ago, my girlfriend and I decided to give a kick to my old home computer (a MSI GE62-6QC Apache gaming laptop) and assemble a huge, monolitic looking desktop machine.
-We wanted something excellent for playing videogames (or so I wanted) and with good parallel computing capabilities for the most CPU intensive tasks like neural network training and video editing.
+Some months ago, my girlfriend and I decided to give a kick to my old home computer (a MSI GE62-6QC Apache gaming laptop) and assemble a huge, monolith looking desktop machine.
+We wanted something excellent for playing videogames (or so I wanted) and with good parallel computing capabilities for the most CPU-intensive tasks like neural network training and video editing.
 
 So after some weeks of discussions, comparisons, components search and learning new things, we came out with the following configuration:
 
@@ -24,9 +24,9 @@ Windows and Ubuntu but soon we realized that the performance was just not good e
 Plus, the feeling of having a user of category A, on the real desktop, and one of category B, the user with the remote desktop, was just not bearable.
 
 The epiphany came with the term `Multiseat`.
-Multiseat is a computer configuration that allows multiple users to connect to the same resources on the same machine while having indipendent terminals and hardware controls.
+Multiseat is a computer configuration that allows multiple users to connect to the same resources on the same machine while having independent terminals and hardware controls.
 Reminder of the old times of mainframes and limited computational power, for our use-case the idea was just a perfect fit.
-So, after some search I came to a solution, good only for Windows sadly, in a softare name [ASTER](https://www.ibik.ru/).
+So, after some search I came to a solution, good only for Windows sadly, in a software named [ASTER](https://www.ibik.ru/).
 
 Despite variegated comments on the web between those who love it and those who just hate it, for us it revealed to be the perfect solution.
 After an initial configuration of two seats on two different screens, we reached a point in which I can play even the most requiring videogame and my girlfriend can work on her seat, at the same time.
