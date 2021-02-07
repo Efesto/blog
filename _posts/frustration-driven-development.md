@@ -1,27 +1,26 @@
 ---
 layout: post
-title: "Frustration driven development"
+title: "Frustration driven developer"
 ---
 
-- An aspect that is often under considered in our industry is the "frustration factor"
-- What are source of frustration? an unexpected Bug hidden in the system complexities, an unplanned deadline, a formal useless meeting, a slow computer, a long feedback circle, a continuous focus switch, micromanagement, bad coffee
-- Maybe score frustration sources in order to prioritize?
-- Directly correlated to how difficult is to work on a certain codebase
-- Correlated to the number of elements that must communicate
-- Not measurable, but this doesn't mean that should not be considered, like overall happiness
-- Correlated to missing automation (SRE book)
-- Complexity increase without incrementality contributes to it
-- Driver for team size and architecture
-- Something to do with microservices out of the box
-- Churn rate is directly connected
-- Frustration is directly correlated to system control and confidence
-- Frustration must emerge as a retrospective output
-- The scout rule
-- Premature optimization
+I consider myself a Frustration driven developer.
+A FDD developer thinks that any system produces a certain amount of frustration during it's maintenance and development operations and this is a direct measure of its overall quality.
+Is a builder that doesn't think about scaling until her/his system is first under some sort of stress, until some bottleneck has been filled or some requirement has been defined.
 
-Take aways
-- Consider frustration together with mainteinability when designing architectures
-- Doesn't exist code without frustration
-- Embrace frustration as a way to improvement
-- What source of frustration can you spot in your day-to-day work?
-- Consider the Agile development manifesto line "Individuals and interactions over processes and tools" when you don't consider something just because is not measurable
+I think that a system that causes frustration to its caretakers is a system that is failing on certain, human-centered metric that is difficult to quantify but which involves a concrete problem for whoever relies on it, in other words, a system that causes frustration is a system that sooner or later will fail the goal(s) for which it has been built.
+
+There's no system that doesn't give a certain dose of frustration, as much as there is no system without bugs, lost knowledge, not fully documented or understandable components and so on.
+But that's why frustration is something that needs to be tackled with every action that is taken on the artifact, might be code change, testing or tooling, and that's why I give value in always leave the code that I touched a bit better than how I've found it.
+
+Frustration is a product of a changing system, some systems tend to change more often and require more attention over time, I work in software and my systems tend to change every hour or less.
+
+
+Also a developing team is a system composed by humans and therefor it can also build frustration.
+If too many elements in a team need to communicate too often, that's source of frustration, maybe also that is a system that has been built for scaling before having the need to.
+Changes in such a system require time to be tested and to stabilize, not differently from a technological one, because people need to develop trust and understandment.
+A team too big for too less work or not well distribuited is a system that fails in controlling frustration.
+
+In conclusion:
+For me reducing frustration is a driver in my developing, as something that "the least, the best".
+Can be considered a metric, hard to measure but important to consider, that has a concrete effect on the maintenance and development of a system.
+The more the system evolves and changes, the more is important to keep frustration under control.
