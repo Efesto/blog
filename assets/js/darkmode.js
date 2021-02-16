@@ -1,18 +1,30 @@
-function toggleDarkMode() {
-  if (window.cookieconsent.hasConsented) {
-    const DARK_CLASS = 'dark';
+var DARK_CLASS = 'dark';
 
-    var body = document.querySelector("body");
-    if (body.classList.contains(DARK_CLASS)) {
-      setCookie('theme', 'light');
-      body.classList.remove(DARK_CLASS);
-    } else {
-      setCookie('theme', 'dark');
-      body.classList.add(DARK_CLASS);
-    }
+function setSwitch(checked) {
+  document.querySelectorAll('.dark-mode-toggle').forEach(ti => ti.checked = checked);
+};
+
+function toggleDarkMode() {
+  var body = document.querySelector("body");
+  if (body.classList.contains(DARK_CLASS)) {
+    setLightMode()
   } else {
-    deleteCookie('theme');
+    setDarkMode()
   }
+}
+
+function setDarkMode() {
+  setCookie('theme', 'dark');
+  var body = document.querySelector("body");
+  body.classList.add(DARK_CLASS);
+  setSwitch(true)
+}
+
+function setLightMode() {
+  setCookie('theme', 'light');
+  var body = document.querySelector("body");
+  body.classList.remove(DARK_CLASS);
+  setSwitch(false)
 }
 
 function getCookie(name) {
@@ -20,32 +32,31 @@ function getCookie(name) {
   return v ? v[2] : null;
 }
 function setCookie(name, value, days) {
-  var d = new Date;
-  d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * days);
-  document.cookie = name + "=" + value + ";path=/;SameSite=strict;expires=" + d.toGMTString();
+  if (window.cookieconsent && window.cookieconsent.hasConsented) {
+    var d = new Date;
+    d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * days);
+    document.cookie = name + "=" + value + ";path=/;SameSite=strict;expires=" + d.toGMTString();
+  } else {
+    var d = new Date;
+    d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * -1);
+    document.cookie = name + "=" + ";path=/;SameSite=strict;expires=" + d.toGMTString();
+  }
 }
-
-function deleteCookie(name) { setCookie(name, '', -1); }
 
 function userPrefersDark() { window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; }
 
-var theme = getCookie('theme');
-if ((theme === null && userPrefersDark()) || theme === 'dark') {
-  var checkDarkDone = false;
-  function checkDark() {
-    if (!checkDarkDone) {
-      toggleDarkMode();
+var checked = false
+function checkDark() {
+  if (!checked) {
+    var theme = getCookie('theme');
+    if ((theme && userPrefersDark()) || theme === 'dark') {
+      setDarkMode()
+    } else {
+      setLightMode()
     }
-    checkDarkDone = true;
-  };
+    checked = true
+  }
+};
 
-  function toggleSwitch() {
-    document.querySelectorAll('.dark-mode-toggle').forEach(ti => ti.checked = true);
-  };
-
-  // Attempt both requestAnimationFrame and DOMContentLoaded, whichever comes first.
-  if (window.requestAnimationFrame) window.requestAnimationFrame(checkDark);
-  window.addEventListener('DOMContentLoaded', checkDark);
-
-  window.addEventListener('DOMContentLoaded', toggleSwitch);
-}
+if (window.requestAnimationFrame) window.requestAnimationFrame(checkDark);
+window.addEventListener('DOMContentLoaded', checkDark);

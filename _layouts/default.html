@@ -18,18 +18,18 @@
     <section class="about">
       <div class="about-header {{condensed_class}}">
         <div class="about-title">
-          <a href="{{ "/" | relative_url}}"></a>
-            {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
-            <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}"
-              alt="{{ site.plainwhite.name }}" />
-            <img class="dark" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image_dark }}"
-              alt="{{ site.plainwhite.name }}" />
-            {% else %}
-            <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
-            {% endif %}
+          <a href="{{ " /" | relative_url}}"></a>
+          {% if site.plainwhite.portfolio_image_dark and site.plainwhite.dark_mode %}
+          <img class="light" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}"
+            alt="{{ site.plainwhite.name }}" />
+          <img class="dark" src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image_dark }}"
+            alt="{{ site.plainwhite.name }}" />
+          {% else %}
+          <img src="{{site.baseurl }}/{{ site.plainwhite.portfolio_image }}" alt="{{ site.plainwhite.name }}" />
+          {% endif %}
           </a>
           <h2 id="title">
-            <a href="{{ "/" | relative_url }}">{{ site.plainwhite.name }}</a>
+            <a href="{{ " /" | relative_url }}">{{ site.plainwhite.name }}</a>
           </h2>
         </div>
         {%- if site.plainwhite.tagline -%}
@@ -143,7 +143,7 @@
         <p>Dark Mode
           <i class="icon-moon"></i>
           <label class="switch">
-            <input type="checkbox" class="dark-mode-toggle">
+            <input type="checkbox" class="dark-mode-toggle" onclick="return false;">
             <span class="slider round" onclick="toggleDarkMode()"></span>
           </label>
         </p>
@@ -160,12 +160,12 @@
     </footer>
   </main>
   {% if site.plainwhite.dark_mode %}
-  <script type="text/javascript" src="{{ "/assets/js/darkmode.js" | relative_url }}"></script>
+  <script type="text/javascript" src="{{ " /assets/js/darkmode.js" | relative_url }}"></script>
   {% endif %}
 
   {% if site.plainwhite.search %}
-  <script src="{{ "/assets/js/simple-jekyll-search.min.js" | relative_url }}"></script>
-  <script src="{{ "/assets/js/search.js" | relative_url }}"></script>
+  <script src="{{ " /assets/js/simple-jekyll-search.min.js" | relative_url }}"></script>
+  <script src="{{ " /assets/js/search.js" | relative_url }}"></script>
   {% endif %}
 
   {%- include cookieconsent.html %}
