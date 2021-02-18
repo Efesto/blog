@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Today I learned - Funny things with the bash
+title: Today I learned: Funny things with the bash
 ---
 
 Thanks to the excellent video [Kata in Bash](https://www.youtube.com/watch?v=N8up3OxfnCQ) from [Andrea Francia](http://andreafrancia.it/), where he creates from scratch a mini testing framework for Bash, today I learned some things:
