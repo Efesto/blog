@@ -20,7 +20,9 @@ layout: default
     {{ content }}
   </div>
   {%- if site.plainwhite.disqus_shortname -%}
-  <div id="disqus_thread" style="margin-top:25px"></div>
+  <div id="disqus_thread" style="margin-top:25px">
+    <h2 style="color: #aaa; font-style: italic; text-align:center">Comments disabled - Allow cookies to enable them</p>
+  </div>
   <script>
     function loadDisqus() {
       if (window.cookieconsent.hasConsented) {
