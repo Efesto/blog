@@ -10,7 +10,7 @@ full_filename="_posts/$filename"
 
 echo "---
 layout: post
-title: $title
+title: \"$title\"
 ---
 " > "$full_filename"
 
