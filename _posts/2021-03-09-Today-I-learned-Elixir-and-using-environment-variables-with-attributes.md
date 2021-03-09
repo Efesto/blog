@@ -5,7 +5,7 @@ title: "Today I learned: Elixir and using environment variables with attributes"
 
 Considering the following code snippet:
 
-```Elixir
+```elixir
 defmodule Variables do
   @variable Application.get_env(:an_application, :variable)
 
@@ -21,7 +21,7 @@ end
 
 with the following mix config file:
 
-```Elixir
+```elixir
   import Config
 
   config :an_application, variable: System.get_env("VARIABLE")
@@ -29,7 +29,7 @@ with the following mix config file:
 
 when we do:
 
-```Shell
+```bash
   VARIABLE="666" mix compile
   iex -S mix
   iex(1)> Variables.get_compiled

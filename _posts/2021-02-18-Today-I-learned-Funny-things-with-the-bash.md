@@ -8,7 +8,7 @@ Thanks to the excellent video [Kata in Bash](https://www.youtube.com/watch?v=N8u
 ## Do you know:
 ### 👉 how to split multiple inputs in a string, space separated, with a one-liner?
 
-```
+```bash
 #!/bin/bash
 
 read -ra numbers <<< "1 2"
@@ -19,7 +19,7 @@ echo "$((numbers[0]+numbers[1]))"
 
 or comma separated
 
-```
+```bash
 #!/bin/bash
 
 IFS=, read -ra numbers <<< "1,2"
@@ -31,7 +31,7 @@ echo "$((numbers[0]+numbers[1]))"
 ### 👉 how to create a temporary file which will be automatically destroyed?
 
 This is useful for those commands which require files as inputs, for example `diff`
-```
+```bash
 > diff <(echo "something") <(echo "something_else")
 1c1
 < something
@@ -43,7 +43,7 @@ It relies on [Process Substitution](https://www.gnu.org/software/bash/manual/bas
 ### 👉 that True and False are commands?
 `true` always succeeds, `false` always fails
 
-```
+```bash
 > true
 > echo $?
 0

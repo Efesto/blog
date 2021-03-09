@@ -6,7 +6,7 @@ title: "Today I learned: How to display erlang code from beam file"
 
 The following code has been adapted to be executed from an `IEX` shell:
 
-```
+```elixir
 module_to_inspect = <module_to_inspect>
 path = :code.which(module_to_inspect)
 {ok,{_,[{abstract_code,{_,ac}}]}} = :beam_lib.chunks(path, [:abstract_code])
