@@ -4,7 +4,7 @@ title: Reading List
 permalink: /reading_list/
 ---
 # Elixir
-## [Programming Elixir ≥ 1.6: Functional |> Concurrent |> Pragmatic |> Fun](https://www.goodreads.com/book/show/40224740-programming-elixir-1-6)
+## [Programming Elixir ≥ 1.6: Functional |> Concurrent |> Pragmatic |> Fun - Dave Thomas](https://www.goodreads.com/book/show/40224740-programming-elixir-1-6)
 ![Book Cover](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529573913l/40224740._SX318_.jpg)
 
 The book where I started with Elixir.
