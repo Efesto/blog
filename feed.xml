@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://marcopolita.me/blog/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://marcopolita.me/blog/blog/" rel="alternate" type="text/html" /><updated>2021-05-04T19:20:18+00:00</updated><id>https://marcopolita.me/blog/blog/feed.xml</id><title type="html">Marco’s Den of dev stories and whatnot</title><subtitle>Frustration driven software developer.</subtitle><entry><title type="html">A day on the WikiWikiWeb</title><link href="https://marcopolita.me/blog/blog/2021/03/25/A-day-on-the-WikiWikiWeb.html" rel="alternate" type="text/html" title="A day on the WikiWikiWeb" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/03/25/A-day-on-the-WikiWikiWeb</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/03/25/A-day-on-the-WikiWikiWeb.html">&lt;p&gt;Today I spent a good chunk of my day reading articles on &lt;a href=&quot;https://en.wikipedia.org/wiki/WikiWikiWeb&quot;&gt;WikiWikiWeb&lt;/a&gt;, the first Wiki ever.&lt;/p&gt;
+
+&lt;p&gt;Here some of the ones that mostly resonated with me:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“You can ChangeYourOrganization or ChangeYourOrganization.” – MartinFowler&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.c2.com/?ChangeYourOrganizationDiary&quot;&gt;The excellent diary from James Shore&lt;/a&gt; on how to bring XP in a non-agile organisation, pairs well with 
+&lt;a href=&quot;https://wiki.c2.com/?ChangeYourOrganizationTactics&quot;&gt;Tactics&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;“Management puts you in a tank. You stay in that tank. Life is an illusion. Management is an illusion. Once you realize this, you can jump twenty feet in the air, dodge bullets, and generally Get Things Done.”&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://wiki.c2.com/?MatrixManagement&quot;&gt;The perilious Matrix Management&lt;/a&gt; that is reflected by the existence of so many staff engineers and Product-something&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is easy for other people to recognize a ChronicComplainer, but the complainers don’t recognize themselves as such.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;The brutal honesty of &lt;a href=&quot;https://wiki.c2.com/?ChronicComplainer&quot;&gt;Chronic complainer&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;A simple view point of what I used to call “the coffee machine communication” in &lt;a href=&quot;https://wiki.c2.com/?SerendipitousCommunication&quot;&gt;SerendipitousCommunication&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;How certain terms used in the industry have started being adopted like &lt;a href=&quot;https://wiki.c2.com/?SilverBullet&quot;&gt;SilverBullet&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I suggest any person interested in Agile methodologies and/or Extreme Programming to have a ride on this ideas train and breath some of the good stuff that yield to the &lt;a href=&quot;https://agilemanifesto.org/&quot;&gt;Agile Manifesto&lt;/a&gt;, which is still one of the best things that happened in the way of conceiving our profession.&lt;/p&gt;
+
+&lt;p&gt;Choo Choo&lt;/p&gt;</content><author><name></name></author><summary type="html">Today I spent a good chunk of my day reading articles on WikiWikiWeb, the first Wiki ever.</summary></entry><entry><title type="html">Today I learned: Elixir and using environment variables with attributes</title><link href="https://marcopolita.me/blog/blog/2021/03/09/Today-I-learned-Elixir-and-using-environment-variables-with-attributes.html" rel="alternate" type="text/html" title="Today I learned: Elixir and using environment variables with attributes" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/03/09/Today-I-learned-Elixir-and-using-environment-variables-with-attributes</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/03/09/Today-I-learned-Elixir-and-using-environment-variables-with-attributes.html">&lt;p&gt;Considering the following code snippet:&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;defmodule&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Variables&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+  &lt;span class=&quot;nv&quot;&gt;@variable&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:an_application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:variable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_compiled&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;nv&quot;&gt;@variable&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+
+  &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;get_runtime&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;do&lt;/span&gt;
+    &lt;span class=&quot;no&quot;&gt;Application&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:an_application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:variable&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;with the following mix config file:&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;Config&lt;/span&gt;
+
+  &lt;span class=&quot;n&quot;&gt;config&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:an_application&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;variable:&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;System&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_env&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;VARIABLE&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;when we do:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;  &lt;span class=&quot;nv&quot;&gt;VARIABLE&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;666&quot;&lt;/span&gt; mix compile
+  iex &lt;span class=&quot;nt&quot;&gt;-S&lt;/span&gt; mix
+  iex&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;1&lt;span class=&quot;o&quot;&gt;)&amp;gt;&lt;/span&gt; Variables.get_compiled
+  &lt;span class=&quot;s2&quot;&gt;&quot;666&quot;&lt;/span&gt;
+  iex&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;2&lt;span class=&quot;o&quot;&gt;)&amp;gt;&lt;/span&gt; Variables.get_runtime
+  nil
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;but when we do:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Shell&quot;&gt;  mix compile --force
+  VARIABLE=&quot;666&quot; iex -S mix
+  iex(1)&amp;gt; Variables.get_compiled
+  nil
+  iex(2)&amp;gt; Variables.get_runtime
+  &quot;666&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;@variable&lt;/code&gt; is initialized at compilation time.&lt;/p&gt;
+
+&lt;p&gt;Lesson learned: use attributes only for variables that are statically set in config, for the rest like variables set with environment variables, define a function&lt;/p&gt;</content><author><name></name></author><summary type="html">Considering the following code snippet:</summary></entry><entry><title type="html">Today I learned: Funny things with the bash</title><link href="https://marcopolita.me/blog/blog/2021/02/18/Today-I-learned-Funny-things-with-the-bash.html" rel="alternate" type="text/html" title="Today I learned: Funny things with the bash" /><published>2021-02-18T00:00:00+00:00</published><updated>2021-02-18T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/02/18/Today-I-learned-Funny-things-with-the-bash</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/02/18/Today-I-learned-Funny-things-with-the-bash.html">&lt;p&gt;Thanks to the excellent video &lt;a href=&quot;https://www.youtube.com/watch?v=N8up3OxfnCQ&quot;&gt;Kata in Bash&lt;/a&gt; from &lt;a href=&quot;http://andreafrancia.it/&quot;&gt;Andrea Francia&lt;/a&gt;, where he creates from scratch a mini testing framework for Bash, today I learned some things:&lt;/p&gt;
+
+&lt;h2 id=&quot;do-you-know&quot;&gt;Do you know:&lt;/h2&gt;
+&lt;h3 id=&quot;-how-to-split-multiple-inputs-in-a-string-space-separated-with-a-one-liner&quot;&gt;👉 how to split multiple inputs in a string, space separated, with a one-liner?&lt;/h3&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-ra&lt;/span&gt; numbers &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1 2&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;numbers[0]+numbers[1]&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# returns 2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or comma separated&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
+
+&lt;span class=&quot;nv&quot;&gt;IFS&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;, &lt;span class=&quot;nb&quot;&gt;read&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-ra&lt;/span&gt; numbers &lt;span class=&quot;o&quot;&gt;&amp;lt;&amp;lt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;1,2&quot;&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;$((&lt;/span&gt;numbers[0]+numbers[1]&lt;span class=&quot;k&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# returns 2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;-how-to-create-a-temporary-file-which-will-be-automatically-destroyed&quot;&gt;👉 how to create a temporary file which will be automatically destroyed?&lt;/h3&gt;
+
+&lt;p&gt;This is useful for those commands which require files as inputs, for example &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;diff&lt;/code&gt;&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; diff &amp;lt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;something&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt; &amp;lt;&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;something_else&quot;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+1c1
+&amp;lt; something
+&lt;span class=&quot;nt&quot;&gt;---&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; something_else
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;It relies on &lt;a href=&quot;https://www.gnu.org/software/bash/manual/bash.html#Process-Substitution&quot;&gt;Process Substitution&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;-that-true-and-false-are-commands&quot;&gt;👉 that True and False are commands?&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;true&lt;/code&gt; always succeeds, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;false&lt;/code&gt; always fails&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;true&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$?&lt;/span&gt;
+0
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;false&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$?&lt;/span&gt;
+1
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><summary type="html">Thanks to the excellent video Kata in Bash from Andrea Francia, where he creates from scratch a mini testing framework for Bash, today I learned some things:</summary></entry><entry><title type="html">Frustration driven developer</title><link href="https://marcopolita.me/blog/blog/2021/02/06/frustration-driven-developer.html" rel="alternate" type="text/html" title="Frustration driven developer" /><published>2021-02-06T00:00:00+00:00</published><updated>2021-02-06T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/02/06/frustration-driven-developer</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/02/06/frustration-driven-developer.html">&lt;p&gt;I consider myself a &lt;strong&gt;Frustration Driven Developer&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;A FD Developer thinks that any system produces a certain amount of frustration during its maintenance and development operations and this is directly correlated to its overall quality.
+Frustration related to a system is something that is primarily perceived by its caretakers, who have direct contact with the system and its day-to-day operations, but a FD approach involves that a system with difficult maintenance will eventually fail its goal(s) and this will be reflected on its stakeholders.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;A system frustrating for its builders and maintainers is a system frustrating for its users and owners.&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;A FD approach considers generated frustration as a human-centric metric with a difficult to measure value but a concrete manifestation in terms of bugs, un-happiness, missing knowledge, lack of trust, and general instability.&lt;/p&gt;
+
+&lt;p&gt;Given that frustration is built with every evolution of the system and increase in complexity, the more often a system changes the more effort is required to keep control of its new complexity and therefore of its new source of frustration.
+A software developer who is aware of such is someone who believes in continuous improvement in terms of understandability of the parts of the system, she/he tends to make the code a bit better every time is modified and consider improvement as a non-delayable part of every development.
+Code developed following the principle of continuous deployment tends to change in circles of minutes or hours, therefore tackling complexity and indirectly frustration is fundamental for its success.&lt;/p&gt;
+
+&lt;p&gt;In short, a frustration driven software developer knows that:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;A sustainable development pace is necessary for keeping frustration under control.&lt;/li&gt;
+  &lt;li&gt;Time is the best test. Every change requires time to stabilize.&lt;/li&gt;
+  &lt;li&gt;Quality is influenced by frustration, quality can be perceived even outside the system.&lt;/li&gt;
+  &lt;li&gt;Building incrementally is the best way to build good systems.&lt;/li&gt;
+  &lt;li&gt;Automatization and the domain of it is key in controlling frustration.&lt;/li&gt;
+  &lt;li&gt;Documentation separated by the code tends to be wrong with time, clean and speaking code is the best documentation.&lt;/li&gt;
+  &lt;li&gt;Complexity and frustration applies also to development teams. Developing requires continuous decision-making, when too many people are involved, the time price to pay for every single decision might become too high.&lt;/li&gt;
+  &lt;li&gt;Satisfied developers build excellent products, frustrated developers leave or break.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;I consider frustration in my day-to-day work as a software developer and being aware of it and actively working for its reduction makes me a better professional.&lt;/p&gt;</content><author><name></name></author><summary type="html">I consider myself a Frustration Driven Developer.</summary></entry><entry><title type="html">My multiseat configuration on Windows or How to train neural networks and play Call of Duty at the same time</title><link href="https://marcopolita.me/blog/blog/2020/06/11/my-multiseat-config-on-windows.html" rel="alternate" type="text/html" title="My multiseat configuration on Windows or How to train neural networks and play Call of Duty at the same time" /><published>2020-06-11T00:00:00+00:00</published><updated>2020-06-11T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2020/06/11/my-multiseat-config-on-windows</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2020/06/11/my-multiseat-config-on-windows.html">&lt;p&gt;Some months ago, my girlfriend and I decided to give a kick to my old home computer (a MSI GE62-6QC Apache gaming laptop) and assemble a huge, monolith looking desktop machine.
+We wanted something excellent for playing videogames (or so I wanted) and with good parallel computing capabilities for the most CPU-intensive tasks like neural network training and video editing.&lt;/p&gt;
+
+&lt;p&gt;So after some weeks of discussions, comparisons, components search and learning new things, we came out with the following configuration:&lt;/p&gt;
+
+&lt;p&gt;Our lovely Monster-Machine&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;CPU: AMD Ryzen™ 9 3900X&lt;/li&gt;
+  &lt;li&gt;Mainboard: ASUS TUF Gaming X570 Plus WIFI Mainboard&lt;/li&gt;
+  &lt;li&gt;Graphics: ASUS GeForce Dual RTX 2080 Super O8G Evo V2&lt;/li&gt;
+  &lt;li&gt;Chassis: BE QUIET Silent Base 801 Gaming PC&lt;/li&gt;
+  &lt;li&gt;Memory: G.SKILL Ripjaws V 32 GB DDR4&lt;/li&gt;
+  &lt;li&gt;PSU: CORSAIR RM750X&lt;/li&gt;
+  &lt;li&gt;Ubuntu 20.04 + Windows 10 Pro&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;We also wanted to be able to use it at the same time, while keeping two different sessions independently on our respective screens, each controlled by a different set of mouse and keyboard.&lt;/p&gt;
+
+&lt;p&gt;At first, I thought that using a laptop computer as a terminal for remote-desktop sessions would have been enough for both
+Windows and Ubuntu but soon we realized that the performance was just not good enough.
+Plus, the feeling of having a user of category A, on the real desktop, and one of category B, the user with the remote desktop, was just not bearable.&lt;/p&gt;
+
+&lt;p&gt;The epiphany came with the term &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Multiseat&lt;/code&gt;.
+Multiseat is a computer configuration that allows multiple users to connect to the same resources on the same machine while having independent terminals and hardware controls.
+Reminder of the old times of mainframes and limited computational power, for our use-case the idea was just a perfect fit.
+So, after some search I came to a solution, good only for Windows sadly, in a software named &lt;a href=&quot;https://www.ibik.ru/&quot;&gt;ASTER&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Despite variegated comments on the web between those who love it and those who just hate it, for us it revealed to be the perfect solution.
+After an initial configuration of two seats on two different screens, we reached a point in which I can play even the most requiring videogame and my girlfriend can work on her seat, at the same time.&lt;/p&gt;
+
+&lt;p&gt;I hope that this post will be useful for those who have a similar problem and are looking for an almost optimal solution (at least on Windows), for us it worked quite well without any relevant problems. I’m honestly surprised by how well this piece of software worked for us.&lt;/p&gt;</content><author><name></name></author><summary type="html">Some months ago, my girlfriend and I decided to give a kick to my old home computer (a MSI GE62-6QC Apache gaming laptop) and assemble a huge, monolith looking desktop machine. We wanted something excellent for playing videogames (or so I wanted) and with good parallel computing capabilities for the most CPU-intensive tasks like neural network training and video editing.</summary></entry><entry><title type="html">Today I learned: How to display erlang code from beam file</title><link href="https://marcopolita.me/blog/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam.html" rel="alternate" type="text/html" title="Today I learned: How to display erlang code from beam file" /><published>2020-03-09T00:00:00+00:00</published><updated>2020-03-09T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam.html">&lt;p&gt;&lt;a href=&quot;https://reverseengineering.stackexchange.com/questions/16661/erlang-source-file-generation-from-beam-file&quot;&gt;Original source&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The following code has been adapted to be executed from an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;IEX&lt;/code&gt; shell:&lt;/p&gt;
+
+&lt;div class=&quot;language-elixir highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;module_to_inspect&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;module_to_inspect&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:code&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;which&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;module_to_inspect&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ok&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,[{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;abstract_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}}]}}&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;ss&quot;&gt;:beam_lib&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;chunks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:abstract_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;])&lt;/span&gt;
+&lt;span class=&quot;ss&quot;&gt;:erl_prettypr&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;format&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;ss&quot;&gt;:erl_syntax&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;form_list&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ac&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;|&amp;gt;&lt;/span&gt; &lt;span class=&quot;no&quot;&gt;IO&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;puts&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;This kind of code could be useful for debugging your build pipeline and, like in my case, troubleshoot why a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;mix&lt;/code&gt; config file entries weren’t applied to the env&lt;/p&gt;</content><author><name></name></author><summary type="html">Original source</summary></entry><entry><title type="html">Today I learned: ASDF – the easy to remember languages version manager</title><link href="https://marcopolita.me/blog/blog/2019/12/01/today-i-learned-asdf.html" rel="alternate" type="text/html" title="Today I learned: ASDF – the easy to remember languages version manager" /><published>2019-12-01T00:00:00+00:00</published><updated>2019-12-01T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2019/12/01/today-i-learned-asdf</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2019/12/01/today-i-learned-asdf.html">&lt;p&gt;&lt;a href=&quot;https://github.com/asdf-vm/asdf&quot;&gt;https://github.com/asdf-vm/asdf&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Just a must have for me now, easy to use, works surprisingly well and it’s pluggable easily, one is not going to install RVM directly anymore here.&lt;/p&gt;
+
+&lt;p&gt;ENJOY!&lt;/p&gt;</content><author><name></name></author><summary type="html">https://github.com/asdf-vm/asdf</summary></entry><entry><title type="html">Today I learned: How to dispatch React-Redux events using only browser console</title><link href="https://marcopolita.me/blog/blog/2019/11/29/today-i-learned-react-redux-events-dispatch.html" rel="alternate" type="text/html" title="Today I learned: How to dispatch React-Redux events using only browser console" /><published>2019-11-29T00:00:00+00:00</published><updated>2019-11-29T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2019/11/29/today-i-learned-react-redux-events-dispatch</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2019/11/29/today-i-learned-react-redux-events-dispatch.html">&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;root&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;).&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_reactRootContainer&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;_internalRoot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;current&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;nullwhile&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;==&lt;/span&gt; &lt;span class=&quot;kc&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;try&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+        &lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;pendingProps&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt; 
+    &lt;span class=&quot;k&quot;&gt;catch&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;e&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+    &lt;span class=&quot;nx&quot;&gt;base&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;child&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;nx&quot;&gt;store&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;dispatch&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;your_event&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Results may vary&lt;/p&gt;</content><author><name></name></author><summary type="html">base = document.getElementById('root')._reactRootContainer._internalRoot.current store = nullwhile (store == null) { try { store = base.pendingProps.store } catch (e) { } base = base.child } store.dispatch(your_event)</summary></entry><entry><title type="html">What 7 years (more or less) of Pair Programming gave me for being a better solo programmer</title><link href="https://marcopolita.me/blog/blog/2017/07/27/what-7-years-of-pair-programming-gave-me.html" rel="alternate" type="text/html" title="What 7 years (more or less) of Pair Programming gave me for being a better solo programmer" /><published>2017-07-27T00:00:00+00:00</published><updated>2017-07-27T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2017/07/27/what-7-years-of-pair-programming-gave-me</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2017/07/27/what-7-years-of-pair-programming-gave-me.html">&lt;p&gt;This time I want to write of a big change that occurred in my way of working during this professional year.&lt;/p&gt;
+
+&lt;p&gt;The shift from a derived &lt;a href=&quot;https://en.wikipedia.org/wiki/Extreme_programming&quot;&gt;XProgramming methodology&lt;/a&gt;, including a strict pair programming centered way of writing code to a solo programming way.&lt;/p&gt;
+
+&lt;p&gt;In this post I want to tell you my experience with XP and the differences that I found with the new way of working.&lt;/p&gt;
+
+&lt;h3 id=&quot;the-truck-number&quot;&gt;The Truck Number&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Project’s Truck Number = The number of devs that must be hit by a truck before some knowledge on the project is lost.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;With constant pair programming (PP from now on) this number is never less than 2 and this includes missing the &lt;strong&gt;Expert Of That Thing™&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;If a codebase has been fully developed in PP with pair rotation, every member of the team is able to quickly understand any part of it without reading any sort of documentation, the code is the documentation, because it’s the product of a collective mind.&lt;/p&gt;
+
+&lt;p&gt;In my experience in 3 different teams working on 3 different projects using different technologies and different “visions” on how to write good code, PP helped me a lot to reach full productivity in less than 2 months.&lt;/p&gt;
+
+&lt;p&gt;I mean being able to fully understand the business, the code visions, being able to join a tactical meeting and feel that my opinion matters.&lt;/p&gt;
+
+&lt;p&gt;Most of the documentation that we were producing consisted of a daily journal that every pair used to write at the end of the working day.&lt;/p&gt;
+
+&lt;p&gt;The journal contained the outcome of the day, new ideas, plans for the day after and problems.&lt;/p&gt;
+
+&lt;p&gt;Of course there were some specific docs about APIs, procedures and whatever but I can say that the journal was the most important one.&lt;/p&gt;
+
+&lt;p&gt;IMHO that fits the concept of “incremental documentation for an incremental development” because it’s literally day-to-day documentation! Take a look at &lt;a href=&quot;http://ronjeffries.com/xprog/articles/expdocumentationinxp/&quot;&gt;this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;shared-codebase-and-the-team&quot;&gt;Shared Codebase and the Team&lt;/h2&gt;
+&lt;p&gt;I don’t know if it’s common or not to every dev to work on a codebase shared between more than 4 people.&lt;/p&gt;
+
+&lt;p&gt;I’m currently working on a codebase that is shared between more or less 12 devs and the divisions between the teams and which codebase they touch is more than foggy, kind of shared/not shared I would say.&lt;/p&gt;
+
+&lt;p&gt;Is more than common when you find a piece of code that you are not suppose to touch and has not been wrote by someone in your team to just pass over it without caring, and the end is ‘ok’ to think that is not of your concern.&lt;/p&gt;
+
+&lt;p&gt;For peace’s sake maybe.&lt;/p&gt;
+
+&lt;p&gt;But&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Pair programming showed me that when a code is bad you should not stay silent before it.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And you have to tell to the person who wrote it why it is.&lt;/p&gt;
+
+&lt;p&gt;That code is also yours, you are working on it and the results of your team depends also on that giant switch/case.&lt;/p&gt;
+
+&lt;p&gt;It means that the whole team must have the shared target of improve it in the best way as possible.&lt;/p&gt;
+
+&lt;p&gt;Studying and sharing knowledge is a way to find out which is.&lt;/p&gt;
+
+&lt;p&gt;Is not only about sharing code, is about sharing successes, failures, skills, commitment and trust.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;em&gt;Being part of the Team.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/assets/images/el-team.jpg&quot; alt=&quot;El Team&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;from-brat-to-senior&quot;&gt;From Brat to Senior&lt;/h3&gt;
+&lt;p&gt;One of the best parts in my opinion of PP was mentoring and  also the one that put me in some impatient work situations ever.&lt;/p&gt;
+
+&lt;p&gt;When you have to work side by side with some fresh hired post-degree junior dev with overgeneralization and comments mania and you are the sheriff in town it’s always hard to keep your common pace slow.&lt;/p&gt;
+
+&lt;p&gt;Good part is that it’s just impossible to not learn something doing PP, maybe that something is not that much if you are the Senior in the pair but for sure for the other there’s no better way to grow as a developer than to be mentored in this way.&lt;/p&gt;
+
+&lt;p&gt;And there’s no better way to understand what are you doing as a Senior than explaining it to someone.&lt;/p&gt;
+
+&lt;h3 id=&quot;simplicity&quot;&gt;Simplicity&lt;/h3&gt;
+&lt;p&gt;Pair Programming is tiring.&lt;/p&gt;
+
+&lt;p&gt;Because you have to deal all the time with another head, fighting sometimes, defend your opinion others.&lt;/p&gt;
+
+&lt;p&gt;And if code quality and the red-green-refactoring cycle have taught me something for sure it’s&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Yo man! Keep it simple!&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Huge artifacts with absurd combinations of configurations, flavors, colors are really not necessary for 90% of the situations.&lt;/p&gt;
+
+&lt;p&gt;And for the remaining 10% there’s an external module.&lt;/p&gt;
+
+&lt;p&gt;If I have to deal with my pair why should I lose time to implement the most complex solution, test it and fight for this idea?&lt;/p&gt;
+
+&lt;p&gt;Probably I just need to detach from the keyboard for some minutes.&lt;/p&gt;
+
+&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;These are the results of my experience with this way of doing software in a team.&lt;/p&gt;
+
+&lt;p&gt;I don’t think is the best way but if you are having any kind of problems in your team related to social dynamics or knowledge sharing this might be something useful to consider.&lt;/p&gt;</content><author><name></name></author><summary type="html">This time I want to write of a big change that occurred in my way of working during this professional year.</summary></entry><entry><title type="html">How I moved to Berlin to be a better Software Developer - The Execution</title><link href="https://marcopolita.me/blog/blog/2017/07/17/how-i-moved-to-berlin-to-be-a-better-dev-the-execution.html" rel="alternate" type="text/html" title="How I moved to Berlin to be a better Software Developer - The Execution" /><published>2017-07-17T00:00:00+00:00</published><updated>2017-07-17T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2017/07/17/how-i-moved-to-berlin-to-be-a-better-dev-the-execution</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2017/07/17/how-i-moved-to-berlin-to-be-a-better-dev-the-execution.html">&lt;p&gt;After the initial period of preparation of which I wrote in the previous post, I started with the real juicy part: finding companies offering interesting job positions and apply for them.&lt;/p&gt;
+
+&lt;p&gt;For starting the search I defined some &lt;strong&gt;criteria&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Android or Ruby developer&lt;/li&gt;
+  &lt;li&gt;Agile environment&lt;/li&gt;
+  &lt;li&gt;Placed in Berlin or Amsterdam&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And &lt;strong&gt;expectations&lt;/strong&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Over 50k € yearly gross for Berlin and over 60k € for Amsterdam (based on the average salary and the cost of life)&lt;/li&gt;
+  &lt;li&gt;Space for self-improvement, like conferences budget, study material, “study attitude”, hackatons and so on.&lt;/li&gt;
+  &lt;li&gt;New technologies with which get my hands dirty.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Having these points clear in mind and on paper I was able to do the first filtering and focus my first search.&lt;/p&gt;
+
+&lt;p&gt;For the search I used mainly LinkedIn and StackOverflow Jobs, wasn’t disappointed by them as I found a huge amount of offers all the time from which choose both as Ruby and Android developer.&lt;/p&gt;
+
+&lt;p&gt;In order to arrive prepared and with confidence to the interviews, I used to have a pre-interview phase during which I retrieved some basic info about the company.&lt;/p&gt;
+
+&lt;p&gt;Info like:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Size&lt;/li&gt;
+  &lt;li&gt;Age&lt;/li&gt;
+  &lt;li&gt;HQ position&lt;/li&gt;
+  &lt;li&gt;Benefits&lt;/li&gt;
+  &lt;li&gt;Technologies used&lt;/li&gt;
+  &lt;li&gt;Developed products&lt;/li&gt;
+  &lt;li&gt;Who works there (same with technical blogs and also Twitter accounts)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Discovering this kind of information is very useful for some reasons:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;One can easily understand if the environment offers a good space for learning new stuff.&lt;/li&gt;
+  &lt;li&gt;By the size and the age one can infer the stability of the company (Not interested in the 300 employees in 1.5 years startup environment, stable as the family Christmas party with uncle Steve who promised to not drink anymore).&lt;/li&gt;
+  &lt;li&gt;One can prepare some specific questions to ask to the interviewer to show interest in the company and some other more generic to understand what kind of benefit they offer.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/assets/images/notes-example.jpg&quot; alt=&quot;Some notes taken during an interview with an olive oil stain&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Additionally to that, I also found useful to be prepared to present myself using a &lt;a href=&quot;https://en.wikipedia.org/wiki/Mind_map&quot;&gt;mind-map&lt;/a&gt; diagram for keeping track of my career.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/blog/assets/images/mind-map.jpg&quot; alt=&quot;My super-secret mind map for replying to the &amp;quot;Tell me something about you&amp;quot; question&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Nothing else than a way to not panic on the “tell me something about you” question.&lt;/p&gt;
+
+&lt;p&gt;This part has the same exact way of structuring a CV, you have to skip the less interesting parts, focus on the important and be ready to explain all your career shifts.&lt;/p&gt;
+
+&lt;p&gt;At the end my “Interview desk” was composed by the personal mind-map on the left of the computer and the company sheet on the right.&lt;/p&gt;
+
+&lt;p&gt;Interviews can be stressful but these habits helped me to feel calmer during my interviews, especially the very first one when you get to know a company and the company gets to know you.&lt;/p&gt;
+
+&lt;p&gt;I don’t have much to say about the technical interviews and code challenge, sometimes I got lucky to be interviewed by someone who knows the jobs for real, asking real questions like “how would you solve this problem?” or “Can you implement this rails/android project for me?” some other I’ve been asked for the classical algorithmic solutions to absurd problems to be solved without using language constructs.&lt;/p&gt;
+
+&lt;p&gt;For the first kind you just have to resume your stuff very well because the fundamentals are something that get lost over time.&lt;/p&gt;
+
+&lt;p&gt;For the second Google is always the best friend here.&lt;/p&gt;
+
+&lt;p&gt;Is important to always ask for feedback at the end of the interview or code challenge because that will help refining your job-seeking skills.&lt;/p&gt;
+
+&lt;p&gt;Stay away from something that seems too easy. If a company looks too eager to propose you a contract and making you sign it something suspicious could be going on and you might regret it later if stability is what you are looking for.&lt;/p&gt;
+
+&lt;h3 id=&quot;conclusions&quot;&gt;Conclusions:&lt;/h3&gt;
+
+&lt;p&gt;After about 6 months and about 10 interviews I managed to find a job here in Berlin as Senior Backend Ruby Developer.&lt;/p&gt;
+
+&lt;p&gt;It took some self-reflection and developing some habits, some kicks and some satisfaction but for sure it made me more aware of myself and of what I wanted.&lt;/p&gt;</content><author><name></name></author><summary type="html">After the initial period of preparation of which I wrote in the previous post, I started with the real juicy part: finding companies offering interesting job positions and apply for them.</summary></entry></feed>
