@@ -40,7 +40,7 @@ when we do:
 
 but when we do:
 
-```Shell
+```bash
   mix compile --force
   VARIABLE="666" iex -S mix
   iex(1)> Variables.get_compiled
