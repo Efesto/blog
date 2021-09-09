@@ -135,9 +135,7 @@
           {% endfor %}
         </ul>
       </nav>
-      {%- endif -%}
-      <p class="about-footer {{condensed_class}}">&copy;
-        {{ "now" | date: "%Y" }}</p>
+      {%- endif -%}      
       {%- if site.plainwhite.dark_mode -%}
       <div class="about-footer {{condensed_class}}">
         <p>Dark Mode
@@ -149,6 +147,8 @@
         </p>
       </div>
       {%- endif -%}
+      <p class="about-footer {{condensed_class}}">Made with <a href="https://jekyllrb.com/">Jekyll</a> with 
+      <a href="https://github.com/samarsault/plainwhite-jekyll">Plainwhite</a> theme</p>
       {% endcapture %}
       {{ footer }}
     </section>
