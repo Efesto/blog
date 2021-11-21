@@ -1,23 +1,20 @@
 ---
 layout: post
-title: "The team of my dreams"
+title: ""
 ---
 
-- Takes care of himself
-  - Values its independence
-    - Iterates and improves its process autonomously
-  - Doesn't work as a lone wolf
-  - Tackles its frustration
-- It's honest with its clients/stakeholders and values their trust
-  - Does its best to deliver realistically
-  - Doesn't hide problems but doesn't use them as an excuse
-  - It's open to observation
-  - Doesn't commit to external estimations or delivery dates
-    - That's not something that the team decided, the team cannot take responsibility for that
-- Cares for the stuff it works on
-  - Considers quality as an essential part of its daily job
-  - Considers quality as a way to gain client trust and frustration prevention
-  - Does continuous delivery
+## Team smells
+As there are code smells, there are team smells.
+Here some that I could detect
+
+- The team is composed by more than 5 builders
+- Most of the team members are on the project from less than 6 months
+- The team is not responsible for its project bugs
+- During project related meetings less than half of the teams members have something to say
+- Daily standups lack meaningful informations
+- Lack of discussions about anything other than the work in progress within the team
+- Only few team members write stories/tickets
+- Broken CI/No continuous delivery
 
 
 ## What damages the dream team
@@ -50,7 +47,7 @@ title: "The team of my dreams"
 - Teams committed to different projects unable to understand any of those precisely
 - Teams that had feedback of their work only it reached production
 - Teams that never committed to sprints and suffered the sprint scope creep
-- Teams doing Scrumban and never understandin fully why
+- Teams doing Scrumban and never understanding fully why
 
 
 ## Tool sharpening
