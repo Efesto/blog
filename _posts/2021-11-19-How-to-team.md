@@ -29,7 +29,7 @@ Delivering consistently, reliably and taking care of its artifacts is the curren
 
 This also means that the team doesn't commit to or promise something that cannot be realistically delivered, might be a date or a long-term plan, in order to not create expectations that cannot be maintained.
 
-This team establishes a contract with its clients that defines how to work with, how to make requests, how to review its job, and so on.
+This team establishes a contract with its clients. It defines how to work with it, how to make requests, how to review its job, and so on.
 
 It doesn't have to hide its progress or be ashamed of its mistakes.
 
