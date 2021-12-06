@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "team smells"
+title: "Team Smells"
 ---
 
 This is my second post about development teams and the problems I've spotted by working with various of them. 
