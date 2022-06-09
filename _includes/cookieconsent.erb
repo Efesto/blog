@@ -1,21 +1,8 @@
-{%- if site.plainwhite.analytics_id -%}
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.plainwhite.analytics_id }}"></script>
-<script>
-  function loadGA() {
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', '{{ site.plainwhite.analytics_id }}');
-  }
-</script>
-{%- endif -%}
-
 <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 <script>
 
   function enableCookies() {
     window.cookieconsent.hasConsented = true;
-    loadGA();
 
     if (typeof loadDisqus === "function") {
       loadDisqus();
