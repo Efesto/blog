@@ -31,18 +31,10 @@ function getCookie(name) {
   var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
   return v ? v[2] : null;
 }
-function setCookie(name, value, days) {
-  if (window.cookieconsent) {
-    if (window.cookieconsent.hasConsented) {
-      var d = new Date;
-      d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * days);
-      document.cookie = name + "=" + value + ";path=/;SameSite=strict;expires=" + d.toGMTString();
-    } else {
-      var d = new Date;
-      d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * -1);
-      document.cookie = name + "=" + ";path=/;SameSite=strict;expires=" + d.toGMTString();
-    }
-  }
+function setCookie(name, value, days) {  
+  var d = new Date;
+  d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * days);
+  document.cookie = name + "=" + value + ";path=/;SameSite=strict;expires=" + d.toGMTString();
 }
 
 function userPrefersDark() { window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; }
