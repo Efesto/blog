@@ -17,7 +17,7 @@ Together with [Elixir School](https://elixirschool.com/en/) is an excellent Elix
 ## [Metaprogramming Elixir - Chris McCord](https://www.goodreads.com/book/show/24791466-metaprogramming-elixir)
 ![Book Cover](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1423129450l/24791466.jpg)
 
-Who better than [Chris](http://www.chrismccord.com/) can show us the power of Metaprogramming in ELixir?
+Who better than [Chris](http://www.chrismccord.com/) can show us the power of Metaprogramming in Elixir?
 
 As the author, I think too that metaprogramming is an important element of every modern language because it allows the programmer to heavily reduce code duplication
 and write beautiful and expressive DSLs.
@@ -35,3 +35,14 @@ The idea of a developer with attention to system maintenance and reliability ove
 the basis of it.
 
 It's free, it's well written, just give it a look.
+
+# Humanity
+
+## [Drive - Daniel H. Pink](https://www.goodreads.com/book/show/6452796-drive)
+![Book Cover](https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348931599l/6452796.jpg)
+
+A nice little book with many insights on what motivates us as humans and on the importance of reaching that state of the mind known as [Flow](https://www.psychologytoday.com/us/basics/flow).
+
+Nothing shocking or unexpected for someone who works in the software industry as developer, as we all are well aware of the blessing of concentration and the frustration of losing it, but a nice reading for having some argument to explain it.
+
+Particularly useful the second part of the book, "The Type I Toolkit"
