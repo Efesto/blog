@@ -43,9 +43,9 @@ plainwhite:
     twitter: marcopoliefesto
     github: Efesto
 
-  analytics_id: UA-63372325-2
-
   navigation:
+    - title: Manual
+      url: "about"
     - title: Reading List
       url: "reading_list"
 # Exclude from processing.
