@@ -12,6 +12,11 @@
     font-family: monospace;
 }
 
+.dark .mbticode {
+    background: white;
+    color: black;
+}
+
 .cols {
     display: grid;
 }
