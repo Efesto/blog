@@ -39,16 +39,19 @@ I appreciate the feedback in written form so I can refer to later for improvemen
 - Pushing and contributing to shortening the communication chain
 - Delivering fast and removing friction
 - Recognizing frustration and working for removing it
+- Leading it towards autonomy
 
-## The environments in which I thrive...
-- Have short communication chains
-- Value individual and team autonomy
-- Allow for honest and straightforward feedback
-- Are not formal for the sake of it
-- are open to change and value agility (without uppercase 'A')
+## My ideal workplace...
+- Is full-remote from anywhere with occasional, optional, in-presence working days for encouraging human connection
+- Has short communication chains between builders and stakeholders
+- Values makers by recognizing individuals' needs and teams' autonomy
+- Values makers over managers
+- Allows for honest and straightforward feedback
+- Considers "BEING CORPORATE" as a legacy more than a value
+- Embraces change and values agility (without uppercase 'A')
 
 ## Beyond work, I’m really passionate about...
-- Computer games, I'm an avid [Hunt: Showdown](https://www.huntshowdown.com/) player
+- Video games, I'm an avid [Hunt: Showdown](https://www.huntshowdown.com/) player
 - Books, both fictionous and non-fictionous
 - Movies, almost any genre
 - Bouldering
