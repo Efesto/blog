@@ -33,7 +33,7 @@ And this one happens every day.
 ### Time management
 People doing creative jobs know the importance of [flow](https://www.psychologytoday.com/us/basics/flow).
 
-A meeting is a sure way to prevent it, not only for the duration of the meeting but also before and sometime after.
+By setting a meeting not only the flow is damaged by an interruption but it requires an additionally recovery time for regaining it.
 
 The idea for avoiding it would be of having the daily at the end or the beginning of the working day, but in a remote environment, the differences between each one's working day are even more marked.
 
