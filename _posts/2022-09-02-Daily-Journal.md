@@ -10,9 +10,9 @@ This team was formed anew and in a remote working context and given the novelty 
 Like many people in my field, I've worked remotely since the beginning of 2020 and therefore I had a good amount of time for developing some ideas regarding the remote daily.
 
 ## Why remote daily sucks
-Remote daily requires people to interrupt whatever they are doing for attending a meeting to explain what they are doing.
-
 ### Collaborative messaging systems
+Dailies require people to interrupt whatever they are doing for attending a meeting to explain what they are doing.
+
 I think it made a lot of sense when we didn't have collaborative messaging tools like Slack or MS Teams.
 
 Those tools allow us to stay connected constantly to a flow of messages from every side of an organization and to asynchronously communicate with whomever, asking for help, sending structured messages and so on.
