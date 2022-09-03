@@ -58,7 +58,7 @@ The idea was to be able to communicate with other people other than ourselves, S
 
 I've decided then to propose a similar tool to my new team in the form of a single, team-shared google document.
 
-Each team member was asked to fill at the beginning of each day by answering the following questions:
+Each team member fills their entry at the beginning of each day by answering the following questions:
 
 - What did I do yesterday?
 - Am I blocked with anything?
