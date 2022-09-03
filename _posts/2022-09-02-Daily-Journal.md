@@ -67,7 +67,7 @@ Each team member fills their entry at the beginning of each day by answering the
 The advantages of such an approach became quickly evident:
 
 ### Recording history
-Having a single, indexed document allows recovery of what happened on any day, simplifies radically the "recovery time" after a holiday or a sick leave and prevents losing information.
+Having a single, searchable document allows recalling of what happened on any day, simplifies radically the "recovery time" after a holiday or a sick leave and prevents losing information.
 
 Not being blended with a chat simplifies this mechanism without any real cost.
 
