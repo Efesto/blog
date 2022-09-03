@@ -3,7 +3,7 @@ layout: post
 title: "Remote daily and Daily journal"
 ---
 
-Recently I've started leading a small engineering team of 4 in Kloeckner.I.
+Recently I've started leading a small engineering team of 4.
 
 This team was formed anew and in a remote working context and given the novelty of it, I took the occasion for rethinking some team-working approaches including the infamous remote daily.
 
