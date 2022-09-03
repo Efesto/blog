@@ -77,7 +77,7 @@ Journaling is an excellent way for ordering ideas and the daily journal helps th
 ### No need for "a quiet place"
 The daily journal doesn't require interrupting whatever one is doing or changing wherever one is working from for connecting in a meeting.
 
-It helps keep the flow, which is an important thing that a team lead should defend.
+It helps keeping the flow, which is an important thing that a team lead should defend.
 
 ### Allows more detailed information
 By having a document dedicated to collecting daily insights, it can be also a space for triggering conversations on other channels and for sharing information.
