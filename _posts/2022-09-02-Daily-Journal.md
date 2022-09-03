@@ -75,7 +75,7 @@ Not being blended with a chat simplifies this mechanism without any real cost.
 Journaling is an excellent way for ordering ideas and the daily journal helps the writer and the reader as well.
 
 ### No need for "a quiet place"
-The daily journal doesn't require interrupting whatever one is doing or changing wherever one is working from just for having a status report.
+The daily journal doesn't require interrupting whatever one is doing or changing wherever one is working from for connecting in a meeting.
 
 It helps keep the flow, which is an important thing that a team lead should defend.
 
