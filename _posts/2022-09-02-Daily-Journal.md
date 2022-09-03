@@ -26,7 +26,7 @@ And because of that, it's even easier to imagine that someone else is thinking t
 
 The statement "you don't have to attend a meeting if we don't see value in it" has a different meaning depending on the hygiene of workplace culture. 
 
-Somewhere and/or for someone a meeting can be seen as a way to report in, despite any good intention.
+Somewhere and/or for someone a meeting can be perceived as a way to report in, despite any good intention.
 
 And this one happens every day.
 
