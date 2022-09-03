@@ -7,17 +7,17 @@ Recently I've started leading a small engineering team of 4.
 
 This team was formed anew and in a remote working context and given the novelty of it, I took the occasion for rethinking some team-working approaches including the infamous remote daily.
 
-Like many people in my field, I've worked remotely since the beginning of 2020 and therefore I had a good amount of time for developing some ideas regarding the remote daily.
+For having a common ground, the remote daily is the transposition, in form of a video call, of the classic daily or standup.
 
 ## Why remote daily sucks
 ### Collaborative messaging systems
 Dailies require people to interrupt whatever they are doing for attending a meeting to explain what they are doing.
 
-I think it made a lot of sense when we didn't have collaborative messaging tools like Slack or MS Teams.
+This made a lot of sense when our workflows didn't include collaborative messaging tools like Slack or MS Teams.
 
-Those tools allow us to stay connected constantly to a flow of messages from every side of an organization and to asynchronously communicate with whomever, asking for help, sending structured messages and so on.
+Those tools allow us to stay connected constantly to a flow of information from every corner of an organization and to asynchronously communicate with whoever just by dropping a message.
 
-Given these premises, I don't get why having a synchronous meeting could be more effective than dropping a message somewhere.
+With such tools and approaches to communication, having a synchronous meeting where people should not discuss things but just report states seems quite a waste of time and concentration.
 
 ### Fear of missing a meeting
 In a remote organization, it's easy to imagine that someone is not doing his part.
@@ -33,30 +33,36 @@ And this one happens every day.
 ### Time management
 People doing creative jobs know the importance of [flow](https://www.psychologytoday.com/us/basics/flow).
 
-By setting a meeting not only the flow is damaged by an interruption but it requires an additionally recovery time for regaining it.
+By setting a meeting not only the flow is damaged by an interruption but it requires an additional recovery time for regaining it.
 
-The idea for avoiding it would be of having the daily at the end or the beginning of the working day, but in a remote environment, the differences between each one's working day are even more marked.
+One of the reasons for which dailies are usually planned at the end or the beginning of the working day is to be as close as possible to a time in which people didn't reach flow.
+
+But in a remote environment, the differences between individual working habits are even more enhanced, making the flow interruption even more probable.
+
+You can have a shared agreement, that would still feel like a compromise for the sake of a meeting.
 
 ### Lost information
 Remote dailies usually are not recorded and the information transmitted there stays only between the sender and the recipient and only if the headphones/microphones worked fine and the recipient was giving attention
 
 It could easily happen that people misunderstand or need to communicate information in different ways, having to rely on the previously mentioned messaging systems.
 
-Additionally, only the attendants to such meetings can benefit from it, leaving whoever wasn't able to attend in obscurity, needing to ask someone else to repeat.
+Additionally, only the attendants to such meetings can benefit from it, leaving whoever wasn't able to attend in obscurity, needing further communication and creating more frustration by the need of repeating things that have been already transmitted somewhere else.
 
-## Still value in sync
-There's still value tho in having in a team a way to synchronize and keep visibility on what each other is doing.
+In the Tech world, a lot of importance is given to documentation of any kind, why should the daily be exempted from it?
 
-Someone might be blocked on a problem that someone else can solve or that the first is working on the same thing as the second.
+## The value of synchronizing a team
+There's value in having a synchronized team that shares visibility on what each other is doing.
 
-I wanted to find a way to let my team be able to do the job they are supposed to do without forcing on themselves any useless bureaucracy.
+Someone might be blocked on a problem that someone else can solve or that someone is working on the same thing as someone else.
+
+As a person responsible for allowing my team to do their best job, I wanted to find a way to keep the synchronization strong without all the problems that a remote daily introduces.
 
 ## Introducing Daily Journal
-In the past, I had the pleasure to work with an amazing eXtreme Programming team and there we used to journal and the end of our working day.
+In the past, I had the pleasure to work with an amazing eXtreme Programming team that used to journal at the end of its working day.
 
-The idea was to be able to communicate with other people other than ourselves, Slack wasn't a tool back then and that tool on an internal wiki was working perfectly for the purpose.
+We needed a way to communicate with other people other than ourselves, Slack didn't exist back then and publishing our journal on an internal wiki worked perfectly for that purpose.
 
-I've decided then to propose a similar tool to my new team in the form of a single, team-shared google document.
+I've decided then to propose a similar tool to my new team in the form of a single, collaborative, Google document.
 
 Each team member fills their entry at the beginning of each day by answering the following questions:
 
@@ -77,7 +83,7 @@ Journaling is an excellent way for ordering ideas and the daily journal helps th
 ### No need for "a quiet place"
 The daily journal doesn't require interrupting whatever one is doing or changing wherever one is working from for connecting in a meeting.
 
-It helps keeping the flow, which is an important thing that a team lead should defend.
+It helps to keep the flow, which is an important thing that a team lead should defend.
 
 ### Allows more detailed information
 By having a document dedicated to collecting daily insights, it can be also a space for triggering conversations on other channels and for sharing information.
