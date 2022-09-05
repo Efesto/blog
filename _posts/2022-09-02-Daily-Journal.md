@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Remote daily and Daily journal"
+title: "Why remote daily sucks - Try remote journal"
 ---
 
 Recently I've started leading a small engineering team of 4.
@@ -39,10 +39,10 @@ One of the reasons for which dailies are usually planned at the end or the begin
 
 But in a remote environment, the differences between individual working habits are even more enhanced, making the flow interruption even more probable.
 
-You can have a shared agreement, that would still feel like a compromise for the sake of a meeting.
+You can have a shared agreement but that would still feel like a compromise for the sake of a meeting and not something in defense of flow.
 
 ### Lost information
-Remote dailies usually are not recorded and the information transmitted there stays only between the sender and the recipient and only if the headphones/microphones worked fine and the recipient was giving attention
+Remote dailies usually are not recorded and the information transmitted there stays only between the sender and the recipient and only if the headphones/microphones worked fine and the recipient was giving attention.
 
 It could easily happen that people misunderstand or need to communicate information in different ways, having to rely on the previously mentioned messaging systems.
 
@@ -98,7 +98,7 @@ Our stakeholders weren't ever interested to such a degree in our internalities, 
 ## Our experience and conclusions
 Since the very first days of adoption, the team preferred the daily journal a lot over the remote daily.
 
-It helped us in quickly onboard our first new team member because it served as a tool for transmitting our team working culture.
+It helped us in quickly onboard our first new team member because it served additionally as a tool for transmitting our team working culture.
 
 To those who might think that avoiding having a daily meeting face-to-face might yield to team alienation, I can suggest focusing on different tools for keeping people connected other than a meeting conceived with the goal of status synchronization.
 
