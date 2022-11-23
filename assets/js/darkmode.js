@@ -14,27 +14,17 @@ function toggleDarkMode() {
 }
 
 function setDarkMode() {
-  setCookie('theme', 'dark');
+  localStorage.setItem('theme', 'dark');
   var body = document.querySelector("body");
   body.classList.add(DARK_CLASS);
   setSwitch(true)
 }
 
 function setLightMode() {
-  setCookie('theme', 'light');
+  localStorage.setItem('theme', 'light');
   var body = document.querySelector("body");
   body.classList.remove(DARK_CLASS);
   setSwitch(false)
-}
-
-function getCookie(name) {
-  var v = document.cookie.match('(^|;) ?' + name + '=([^;]*)(;|$)');
-  return v ? v[2] : null;
-}
-function setCookie(name, value, days) {  
-  var d = new Date;
-  d.setTime(d.getTime() + 24 * 60 * 60 * 1000 * days);
-  document.cookie = name + "=" + value + ";path=/;SameSite=strict;expires=" + d.toGMTString();
 }
 
 function userPrefersDark() { window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches; }
@@ -42,7 +32,7 @@ function userPrefersDark() { window.matchMedia && window.matchMedia('(prefers-co
 var checked = false
 function checkDark() {
   if (!checked) {
-    var theme = getCookie('theme');
+    var theme = localStorage.getItem('theme');
     if ((!theme && userPrefersDark()) || theme === 'dark') {
       setDarkMode()
     } else {

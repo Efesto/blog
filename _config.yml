@@ -37,8 +37,6 @@ plainwhite:
   dark_mode: true
   sitemap: true
 
-  disqus_shortname: marcopolita
-
   social_links:
     twitter: marcopoliefesto
     github: Efesto
