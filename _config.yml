@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title:   Marco's Den of dev stories and whatnot
+title: Marco's Den of dev stories and whatnot
 description: Frustration driven software developer.
 baseurl:             "/blog"
 url:                 https://marcopolita.me/blog
@@ -26,6 +26,7 @@ url:                 https://marcopolita.me/blog
 theme: plainwhite
 plugins:
   - jekyll-feed
+author: Marco "Efesto" Polita
 
 show_excerpts: false
 
