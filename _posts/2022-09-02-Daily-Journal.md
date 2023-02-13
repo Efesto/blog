@@ -115,6 +115,6 @@ It helped us in quickly onboard our first new team member because it served addi
 
 To those who might think that avoiding having a daily meeting face-to-face might yield to team alienation, I can suggest focusing on different tools for keeping people connected other than a meeting conceived with the goal of status synchronization.
 
-In our case we have a private chat for techs only where everyone is free to chat and write whatever might cross their mind, it's a nice way to vent out and keeps the team cohesive.
+In our case we have a private chat for developers only where everyone is free to chat and write whatever might cross their mind, it’s a nice way to vent out and keeps the team cohesive.
 
 If you are responsible for defining an engineering team process or simply a member, I'd invite you to give it a chance for some time and see how it works.
