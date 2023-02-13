@@ -27,7 +27,7 @@ In order to have that I need not only to know the _what_ but also the _why_ I'm 
 
 Also I give my best when I'm part of a passionate, smart and motivated team that can take care of itself.
 
-I've wrote about that in [How to team](https://www.marcopolita.me/blog/2021/11/19/How-to-team.html) and [Frustration driven developer](https://www.marcopolita.me/blog/2021/02/06/frustration-driven-developer.html)
+I've wrote about that in [How to team]({% post_url 2021-11-19-How-to-team %}) and [Frustration driven developer]({% post_url 2021-02-06-frustration-driven-developer %})
 
 ## What motivates me to come into work each day is
 
