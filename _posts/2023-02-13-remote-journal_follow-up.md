@@ -7,13 +7,13 @@ This is a follow-up post to [Why remote daily sucks - Try remote journal]({% pos
 
 I've received feedback and questions on the approach and I want to gather them here and take time for looking back at this tool one year later.
 
-## How do you keep people connected if they don't see each other anymore during the daily?
+## How do you keep people connected if they don't see each other at the daily?
 
-This concern was present also at the introduction of the journal but is not related specifically to removing the remote daily itself but rather to the whole remote working approach.
+This concern was present also at the introduction of the journal and is not related specifically to removing the remote daily itself but rather to the whole remote working approach.
 
 I think creating connections between the members of a team is a task that every team-lead should take, "team spirit" is an abstract concept but very much present and relevant to building an effective team, and is about connecting humans.
 
-> For that reason we introduced the developers-only chat and a recurrent "co-working call".
+For that reason, we introduced the developers-only chat and a recurrent "co-working call".
 
 The first, as suggested in the original post, worked amazingly not only as a place to communicate with the rest of the team but also as a safe space for expressing "humanity", the element that some value so much in the remote daily.
 
@@ -37,23 +37,29 @@ On the topic of pair programming remotely I'm still conflicted and maybe I'll wr
 
 So after one year of experiments, my conclusion is that, by working remotely, you can build a "good enough" team culture but it will never replace the full "in the office" experience.
 
-And I think [that's fine]({% post_url 2023-02-13-Remote-work-yays-and-nays %}), is better to organize, if possible, funny, people-oriented events and to rely on synchronous meetings only when necessary.
+And I think [that's fine]({% post_url 2023-02-13-Remote-work-yays-and-nays %}).
+
+In a remote environment is better to organize, if possible on place, funny, people-oriented events and to rely on synchronous meetings only when necessary than keeping synchronous meetings hoping for people to connect at any cost.
 
 ## How do people reach out to each other if they need help?
 
-The journal for us worked well to ask for help because a request is always visible, black on white  (or white on black for those with a dark theme).
+> The journal for us worked well to ask for help because a request is always visible, black on white (or white on black for those with a dark theme).
 
-It makes it more difficult to avoid it and even if other distractions take over during the day, the journal is there to remind you that someone needs some support.
+It makes it more difficult to avoid it and even if other distractions take over during the day, the journal is there to remind you that someone needs support.
 
 Having a daily update in the journal proved to be frequent enough to not let people be frustrated with requests that stay pending for days.
 
-And of course, if one needs help ASAP, the chat is always there for it and no one played the ghost in it.
+And of course, if one needs help ASAP, the chat is always there and no one played the ghost in it.
 
-In addition to having continuous communication, the remote journal helps in those cases in which one is blocked but doesn't know it, the "hidden blocker".
+In addition to having continuous communication, the remote journal helps in those cases in which one is blocked without knowing it, I call it the "hidden blocker".
 
 ### The hidden blocker
 
-Engineers are proud creatures, and sometimes they are not even aware when they are blocked by a problem.
+Engineers are proud creatures, and sometimes they are not even aware when they are blocked by a hidden blocker.
+
+> Typically a hidden blocker is when someone is approaching a solution from an overly complex direction, because of inexperience with that specific problem or with the system or something else altogether.
+
+Having the journal for wrapping up one's thoughts and additionally sharing them with others, like with a rubber duck, exposes the hidden blocker and allows others to tackle it.
 
 This helps keep the work smooth and reduces massively the frustration, especially for newly onboarded members.
 
@@ -65,9 +71,9 @@ I don't believe in that, but even if so, after my experience, I'd add "...but wi
 
 It was a concern at the beginning, and I had set up an automatic reminder at the beginning of the day asking to compile the journal.
 
-I've appreciated the journal as the first thing to do in my working day, it helped to order my ideas and to wrap up, with a fresh mind, what I did the time before.
+With time, I've started appreciating the journal as the first thing to do in my working day, it helped to order my ideas and to wrap up, with a fresh mind, what I did the time before.
 
-It became a positive, solid habit and I like to think that it was the same also with my mates and because of that, we didn't need any reminders for doing it.
+> It became a positive, solid habit and I like to think that it was the same also with my mates and because of that, we didn't need any reminders for doing it.
 
 ## How do you encourage people to read journal?
 
@@ -79,7 +85,7 @@ The explanation I give to this is that the journal, with its persistence, can be
 
 Also, sometimes the information in it is useful for aspects of work that have to be executed in the day.
 
-> I think that being a simple and useful tool that pays back the time spent on it doesn't need to actively encourage anyone to use it.
+> It's a simple and useful tool, and because of that we use it without any need of "encouragement"
 
 ## The remote journal is another step in the direction of working asynchronously, without meetings. When do you think instead makes sense to have meetings?
 
@@ -87,28 +93,31 @@ First of all, I think should be important to address how to have meaningful meet
 
 But besides how to have effective synchronous meetings in an asynchronous organization, I think deciding if something should be synchronous or asynchronous is more an art than a scientific decision.
 
-> In my experience, a synchronous meeting pays more than an asynchronous communication when is necessary a lot of back and forth between parties or when the human factor is more important then the practical factor. Retrospectives and 1:1s are examples of it.
+> In my experience, a synchronous meeting pays more than asynchronous communication when is necessary a lot of back and forth between parties or when the human factor is more important than the practical factor. Retrospectives and 1:1s are examples of it.
 
 However, I think the journal could be a good starting point for building awareness that synchronous meetings are not unavoidable.
 
 ## Unexpected pros
 
-In addition to what I was expecting before starting the remote journal experiment, other positive effects popped out this year:
+In addition to what I was expecting before starting the remote journal experiment, other positive effects popped out:
 
 ### Code review efficiency
 
 As I've said before, having written in the journal that something is ready for review, in addition to the agile board, helps remind the team as a whole that something requires their attention.
 
-I don't have numbers with me for it, but I have witnessed as an engineer in my team that code reviews rarely hang there for "too long".
+I have witnessed as an engineer in my team that code reviews rarely hang there for "too long".
 
-~~Facebook~~ Meta has an [interesting approach](https://engineering.fb.com/2022/11/16/culture/meta-code-review-time-improving/) of "poking" engineers for code review, I think the journal fits in the same approach as a soft version of it.
+In support of that, ~~Facebook~~ Meta has an [interesting approach](https://engineering.fb.com/2022/11/16/culture/meta-code-review-time-improving/) of "poking" engineers for code review and I think the journal fits in the same approach as a softer, easier-to-implement version of it.
 
 ### Transparency
 
-> I've been asked recently to invite additional managers to our dailies, as other teams do, and as answer I've just forwarded a simple link to our journal (and handbook, but this is another story).
+> I've been asked recently to invite additional managers to our dailies, as other teams do, and as answer, I've just forwarded a simple link to our journal (and handbook, but this is another story).
 
 Having a journal indirectly brings transparency and lets the team talk for itself.
+
 There's no need to invite anyone to anything or explain how the team works because is everything written there: the feelings of the team, the way of working, the blockers and the progress; everything is perceivable from the journal and can be backtracked.
+
+Additionally, we can support an indefinite number of additional observers without the need of disrupting our processes with "guests".
 
 ## Conclusions
 
