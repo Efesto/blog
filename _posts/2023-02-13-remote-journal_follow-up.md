@@ -129,6 +129,6 @@ Since we adopted the remote journal we haven't looked back to the daily and ther
 
 In addition to some good points that I've explained in [Why remote daily sucks - Try remote journal]({% post_url 2022-09-02-Daily-Journal %}) others came out during this year.
 
-As I've invited in the last post, the best way to know if it's the right tool is by trying it and being open.
+As I've invited in the last post, the best way to know if it's the right tool is to try it.
 
 If you fancy an exchange of opinions or knowing more about it, feel free to reach out to me.
