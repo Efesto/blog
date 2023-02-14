@@ -35,7 +35,9 @@ We miserably failed in being regular and the times we managed were too rare for 
 
 On the topic of pair programming remotely I'm still conflicted and maybe I'll write about it in the future.
 
-So after one year of experiments, my conclusion is that, by working remotely, you can build a "good enough" team culture but it will never replace the full "in the office" experience.
+### Working remotely
+
+So after one year of experiments, my conclusion is that, by working remotely, you can build a "good enough" team spirit but it will never replace the full "in the office" experience.
 
 And I think [that's fine]({% post_url 2023-02-13-Remote-work-yays-and-nays %}).
 
@@ -62,6 +64,8 @@ Engineers are proud creatures, and sometimes they are not even aware when they a
 Having the journal for wrapping up one's thoughts and additionally sharing them with others, like with a rubber duck, exposes the hidden blocker and allows others to tackle it.
 
 This helps keep the work smooth and reduces massively the frustration, especially for newly onboarded members.
+
+### "One talks and the others listen"
 
 I've been told that in the dailies, there's the good point of "one talks and the others listen" that makes it easier to call for help.
 
