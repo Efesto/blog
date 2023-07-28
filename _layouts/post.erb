@@ -18,5 +18,10 @@ layout: default
   </div>
   <div class="post">
     {{ content }}
-  </div>  
+  </div>
+  <div class="links">
+    {%- if page.hacker_news_link -%}
+      <a href={{ page.hacker_news_link }}>This post on Hacker News</a>
+    {%- endif -%}
+  </div>
 </div>

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Why remote daily sucks - Try remote journal"
+hacker_news_link: https://news.ycombinator.com/item?id=36860819
 ---
 
 Recently I've started leading a small engineering team of 4.
