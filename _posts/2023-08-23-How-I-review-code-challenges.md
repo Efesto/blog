@@ -32,13 +32,16 @@ title: "How I review code challenges"
     - Do they proper cover the critical parts of the code?
     - How easy are they to break?
     - Have been generated or are genuinely the result of the developer's mind?
+    - Organization
   - Test the program
     - Does it do what it should?
   - Check the code
     - Edge cases
     - Understandability
+    - Organization
   - Check the git history
 - Collect post review questions for the follow-up interview (if any)
   - Any interesting solution in the code?
   - Explain certain decisions
   - How to approach this or that problem
+ 
