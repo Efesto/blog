@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "How I review code challenges for recruitment"
+hacker_news_link: https://news.ycombinator.com/item?id=37478842
 ---
 
 I did a fair amount of technical assessments to decide if a hiring candidate was technically prepared to join a dev team, sometimes my own, sometimes another.
