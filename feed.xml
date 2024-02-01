@@ -1,0 +1,759 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://marcopolita.me/blog/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="https://marcopolita.me/blog/blog/" rel="alternate" type="text/html" /><updated>2024-02-01T11:49:22+00:00</updated><id>https://marcopolita.me/blog/blog/feed.xml</id><title type="html">A frustration driven dev blog - Marco Polita</title><subtitle>Frustration driven software developer.</subtitle><author><name>Marco &quot;Efesto&quot; Polita</name></author><entry><title type="html">How I review code challenges for recruitment</title><link href="https://marcopolita.me/blog/blog/2023/09/12/How-I-review-code-challenges.html" rel="alternate" type="text/html" title="How I review code challenges for recruitment" /><published>2023-09-12T00:00:00+00:00</published><updated>2023-09-12T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2023/09/12/How-I-review-code-challenges</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2023/09/12/How-I-review-code-challenges.html"><![CDATA[<p>I did a fair amount of technical assessments to decide if a hiring candidate was technically prepared to join a dev team, sometimes my own, sometimes another.</p>
+
+<p>I’ve developed a process for guiding me during the review process.</p>
+
+<p>I think it worked well so far for making a fair and realistic assessment.</p>
+
+<h2 id="-code-challenges-as-an-assessment-tool">🏆 Code challenges as an assessment tool</h2>
+
+<p>During a technical recruitment process, I find take-home tasks an excellent way to assess the traits and technical skills of a candidate even before having a face-to-face interview.</p>
+
+<p>Additionally, they help the candidate to face the follow-up interview with serenity because his code challenge will be used as a discussion point, setting down the expectations and reducing the surprise effect.</p>
+
+<p>It is also important to keep in mind that sometimes one just doesn’t have the time or the conditions to express his art to the best.</p>
+
+<p>That’s fair and should be part of the evaluation.</p>
+
+<p>I try to keep such consideration in mind when I do code review, any recruitment process cannot be fully effective without human empathy, otherwise, we’d be hiring machines.</p>
+
+<p>Or we’d be hired by machines.</p>
+
+<h2 id="-the-ideal-challenge">🌟 The ideal challenge</h2>
+
+<p>Depending on the position the candidate applied for, the ideal code challenge should:</p>
+
+<h3 id="be-a-take-home-task">Be a take-home task</h3>
+
+<p>There is no reason why a candidate should not be allowed to work on the challenge whenever possible, however is preferred. Exactly how the job we are offering is.</p>
+
+<h3 id="be-solvable-within-a-fair-amount-of-time">Be solvable within a fair amount of time</h3>
+
+<p>Usually, there’s no need to ask for over-complex challenges that “usually” take more than 2/3 hours to complete to get a realistic impression.</p>
+
+<p>The candidate is allocating some of his time to our challenge to fulfill our need for assessment.</p>
+
+<p>That’s a favor that we are asking, and accepting is a courtesy we are receiving.</p>
+
+<h3 id="require-the-right-technologies">Require the right technologies</h3>
+
+<p>Doesn’t make much sense to ask a candidate to code in a programming language that will not be used, as well with other technologies like databases.</p>
+
+<h3 id="be-self-contained-like-a-web-app-and-ask-for-production-ready-code">Be self-contained, like a web app, and ask for production-ready code</h3>
+
+<p>This helps to understand what the candidate considers “production-ready” code.</p>
+
+<p>This definition should be vague and let the candidate show what it means to him.</p>
+
+<h3 id="lack-some-details-on-purpose-mid-and-seniors">Lack some details on purpose (Mid and Seniors)</h3>
+
+<p>Rarely in the real world, the requirements given to us are precise and perfect.</p>
+
+<p>I expect a mid-level candidate to be able to improvise and fill the gaps in any way that makes sense, may be asking for details or taking and justifying decisions.</p>
+
+<h3 id="require-version-control-mid-and-seniors">Require version control (Mid and Seniors)</h3>
+
+<p>There are other fundamental tools to our work that I’d expect a candidate to be able to use, VCSs are one of these.</p>
+
+<p>Is not necessary to have a server for version control, with <a href="https://git-scm.com/docs/git-archive">git archive</a> for example is possible to have git history in a self-contained archive file.</p>
+
+<h3 id="have-a-time-constraint-seniors-only">Have a time constraint (Seniors only)</h3>
+
+<p>I believe that managing time is an important skill for a software engineer because involves the ability to prioritize tasks.</p>
+
+<h3 id="contain-some-non-trivial-problem-seniors-only">Contain some non-trivial problem (Seniors only)</h3>
+
+<p>The importance of this depends greatly on the technical level I’m looking for so mileage may vary.</p>
+
+<p>As a rule of thumb, a good challenge should have a non-trivial problem and the good solution should be as simple as possible.</p>
+
+<h2 id="-the-review-process">📝 The review process</h2>
+
+<p>The goal of this process is to answer the question <strong>“Does the candidate have a sufficient level of technical expertise for this job?”</strong>.</p>
+
+<p>I think is important to keep focus on this question as we could be biased and evaluate the candidate by other factors other than the artifact we got presented.</p>
+
+<p>For the same reason, I prefer to read the CV only after the challenge review.</p>
+
+<h3 id="the-output">The output</h3>
+
+<p>My favorite tool for answering the question is a Good-Bad-Meh list:</p>
+
+<ul>
+  <li>✅ GOODs are things that shine out of the ordinary, for example, a docker-compose file for launching the project locally or a particularly clever and simple solution.</li>
+  <li>🟡 MEHs are things that I didn’t like but I don’t see as that serious, for example, mistakes in the documentation or inconsistent documentation.</li>
+  <li>❌ BADs are things that I see as more serious and could require further questions, for example, if there are no tests.</li>
+</ul>
+
+<p>This list it’s a tool for resuming my review and could offer discussion points for the follow-up technical interview.</p>
+
+<h3 id="reviewing-the-challenge">Reviewing the challenge</h3>
+
+<p>The whole process should not take more than 1 hour, the least the better.</p>
+
+<h4 id="read-the-documentation">Read the documentation</h4>
+
+<ul>
+  <li>By putting myself in the shoes of a newly onboarded developer who has to work on this code, would I be able to start the project without thinking too much?</li>
+  <li>Is there a procedure to run?</li>
+  <li>Is there some form of container that I can run so I don’t need to install dependencies?</li>
+  <li>Are there some gotchas documented? How some decisions have been taken and so on?</li>
+</ul>
+
+<h4 id="run-the-tests">Run the tests</h4>
+
+<ul>
+  <li>Do the tests run without additional steps?</li>
+  <li>Are they passing?</li>
+</ul>
+
+<h4 id="read-the-tests">Read the tests</h4>
+
+<ul>
+  <li>Do the tests properly cover the critical parts of the code?</li>
+  <li>How easy are they to break?</li>
+  <li>Have been generated or are the result of the candidate’s work?</li>
+  <li>Are they easy to read and understand?</li>
+  <li>Have they been written with TDD?</li>
+  <li>Do they follow code conventions?</li>
+</ul>
+
+<h4 id="manual-testing">Manual testing</h4>
+
+<ul>
+  <li>Is the app difficult to start?</li>
+  <li>Does it do what it should?</li>
+</ul>
+
+<h4 id="read-the-code">Read the code</h4>
+
+<ul>
+  <li>How have been the edge cases tackled?</li>
+  <li>How did the candidate deal with the missing requirements?</li>
+  <li>Is it easy to understand?</li>
+  <li>Any interesting solution or approach?</li>
+  <li>Is there dead code?</li>
+</ul>
+
+<h4 id="check-the-vcs-history">Check the VCS history</h4>
+
+<ul>
+  <li>Are the commit messages meaningful?</li>
+  <li>Do the commits contain code and tests together?</li>
+  <li>How much time did the candidate take for which part?</li>
+</ul>
+
+<h2 id="-conclusions">🚀 Conclusions</h2>
+
+<p>Code challenges can be a good technical assessment tool if certain criteria are followed.</p>
+
+<p>Their review should also follow certain steps to avoid biases and unfair evaluations.</p>
+
+<p>They are not enough for painting a full picture of a possible team member but they can be a good starting point for further discussions and give a fair impression of what one is capable of.</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[I did a fair amount of technical assessments to decide if a hiring candidate was technically prepared to join a dev team, sometimes my own, sometimes another.]]></summary></entry><entry><title type="html">Remote journal - A year after</title><link href="https://marcopolita.me/blog/blog/2023/02/13/remote-journal_follow-up.html" rel="alternate" type="text/html" title="Remote journal - A year after" /><published>2023-02-13T00:00:00+00:00</published><updated>2023-02-13T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2023/02/13/remote-journal_follow-up</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2023/02/13/remote-journal_follow-up.html"><![CDATA[<p>This is a follow-up post to <a href="/blog/2022/09/02/Daily-Journal.html">Why remote daily sucks - Try remote journal</a> one year after adopting the remote journal in my team.</p>
+
+<p>I’ve received feedback and questions on the approach and I want to gather them here and take time for looking back at this tool one year later.</p>
+
+<h2 id="how-do-you-keep-people-connected-if-they-dont-see-each-other-at-the-daily">How do you keep people connected if they don’t see each other at the daily?</h2>
+
+<p>This concern was present also at the introduction of the journal and is not related specifically to removing the remote daily itself but rather to the whole remote working approach.</p>
+
+<p>I think creating connections between the members of a team is a task that every team-lead should take, “team spirit” is an abstract concept but very much present and relevant to building an effective team, and is about connecting humans.</p>
+
+<p>For that reason, we introduced the developers-only chat and a recurrent “co-working call”.</p>
+
+<p>The first, as suggested in the original post, worked amazingly not only as a place to communicate with the rest of the team but also as a safe space for expressing “humanity”, the element that some value so much in the remote daily.</p>
+
+<p>The second can be resumed with “a daily, optional meeting that takes place every morning for the whole morning and where everyone is invited”.</p>
+
+<h3 id="️-co-working-call">☎️ Co-working call</h3>
+
+<p>The original idea was to have a virtual equivalent of “the water cooler” or “coffee machine” where people could feel free to spontaneously meet and connect.</p>
+
+<p>The call is most of the time empty but is still the place where we can informally discuss between us and handle anything that should be handled synchronously.</p>
+
+<p>I think it partly achieved its goal of being a spontaneous space because often discussions there involve the culture behind decisions and “humanity”, not having a definite time also helped in keeping things spontaneous.</p>
+
+<h3 id="-working-together-as-engineers-pair-and-mob-programming">🙌 Working together as engineers: pair and mob programming</h3>
+
+<p>Together with team chat and co-working calls, we also tried to adopt regular occasions for doing pair or mob programming.</p>
+
+<p>We miserably failed in being regular and the times we managed were too rare for helping build a team spirit.</p>
+
+<p>On the topic of pair programming remotely I’m still conflicted and maybe I’ll write about it in the future.</p>
+
+<h3 id="-working-remotely-">💻 Working remotely 🌴</h3>
+
+<p>So after one year of experiments, my conclusion is that, by working remotely, you can build a “good enough” team spirit but it will never replace the full “in the office” experience.</p>
+
+<p>And I think <a href="/blog/2023/01/23/Remote-work-yays-and-nays.html">that’s fine</a>.</p>
+
+<p>In a remote environment is better to organize, if possible on place, funny, people-oriented events and to rely on synchronous meetings only when necessary than keeping synchronous meetings hoping for people to connect at any cost.</p>
+
+<h2 id="how-do-people-reach-out-to-each-other-if-they-need-help">How do people reach out to each other if they need help?</h2>
+
+<blockquote>
+  <p><strong>The journal for us worked well to ask for help because a request is always visible, black on white (or white on black for those with a dark theme).</strong></p>
+</blockquote>
+
+<p>It makes it more difficult to avoid it and even if other distractions take over during the day, the journal is there to remind you that someone needs support.</p>
+
+<p>Having a daily update in the journal proved to be frequent enough to not let people be frustrated with requests that stay pending for days.</p>
+
+<p>And of course, if one needs help ASAP, the chat is always there and no one played the ghost in it.</p>
+
+<p>In addition to having continuous communication, the remote journal helps in those cases in which one is blocked without knowing it, I call it the “hidden blocker”.</p>
+
+<h3 id="-the-hidden-blocker">🥷 The hidden blocker</h3>
+
+<p>Engineers are proud creatures, and sometimes they are not even aware when they are blocked by a hidden blocker.</p>
+
+<blockquote>
+  <p><strong>Typically a hidden blocker is when someone is approaching a solution from an overly complex direction, because of inexperience with that specific problem or with the system or something else altogether.</strong></p>
+</blockquote>
+
+<p>Having the journal for wrapping up one’s thoughts and additionally sharing them with others, like with a rubber duck, exposes the hidden blocker and allows others to tackle it.</p>
+
+<p>This helps keep the work smooth and reduces massively the frustration, especially for newly onboarded members.</p>
+
+<h3 id="-one-talks-and-the-others-listen">📢 “One talks and the others listen”</h3>
+
+<p>I’ve been told that in the dailies, there’s the good point of “one talks and the others listen” that makes it easier to call for help.</p>
+
+<p>I don’t believe in that, but even if so, after my experience, I’d add “…but with the remote journal, one writes and the others read. And they can’t miss the message”</p>
+
+<h2 id="do-you-need-a-reminder-for-compiling-the-journal">Do you need a reminder for compiling the journal?</h2>
+
+<p>It was a concern at the beginning, and I had set up an automatic reminder at the beginning of the day asking to compile the journal.</p>
+
+<p>With time, I’ve started appreciating the journal as the first thing to do in my working day, it helped to order my ideas and to wrap up, with a fresh mind, what I did the time before.</p>
+
+<blockquote>
+  <p><strong>It became a positive, solid habit and I like to think that it was the same also with my mates and because of that, we didn’t need any reminders for doing it.</strong></p>
+</blockquote>
+
+<h2 id="how-do-you-encourage-people-to-read-journal">How do you encourage people to read journal?</h2>
+
+<p>This also revealed to be a non-problem for my team.</p>
+
+<p>My mates and I, more them than me in all honesty, are always aligned on what happens within the team and especially on what is in the journal. In my experience, team awareness is even stronger than with a face-to-face daily.</p>
+
+<p>The explanation I give to this is that the journal, with its persistence, can be kept in a browser tab to be consulted from time to time during the working day.</p>
+
+<p>Also, sometimes the information in it is useful for aspects of work that have to be executed in the day.</p>
+
+<blockquote>
+  <p><strong>It’s a simple and useful tool, and because of that we use it without any need of “encouragement”</strong></p>
+</blockquote>
+
+<h2 id="the-remote-journal-is-another-step-in-the-direction-of-working-asynchronously-without-meetings-when-do-you-think-instead-makes-sense-to-have-meetings">The remote journal is another step in the direction of working asynchronously, without meetings. When do you think instead makes sense to have meetings?</h2>
+
+<p>First of all, I think should be important to address how to have meaningful meetings and Gitlab does an excellent job <a href="https://about.gitlab.com/company/culture/all-remote/meetings/">with its handbook</a>.</p>
+
+<p>But besides how to have effective synchronous meetings in an asynchronous organization, I think deciding if something should be synchronous or asynchronous is more an art than a scientific decision.</p>
+
+<blockquote>
+  <p><strong>In my experience, a synchronous meeting pays more than asynchronous communication when is necessary a lot of back and forth between parties or when the human factor is more important than the practical factor. Retrospectives and 1:1s are examples of it.</strong></p>
+</blockquote>
+
+<p>However, I think the journal could be a good starting point for building awareness that synchronous meetings are not unavoidable.</p>
+
+<h2 id="unexpected-pros">Unexpected pros</h2>
+
+<p>In addition to what I was expecting before starting the remote journal experiment, other positive effects popped out:</p>
+
+<h3 id="-code-review-efficiency">📖 Code review efficiency</h3>
+
+<p>As I’ve said before, having written in the journal that something is ready for review, in addition to the agile board, helps remind the team as a whole that something requires their attention.</p>
+
+<p>I have witnessed as an engineer in my team that code reviews rarely hang there for “too long”.</p>
+
+<p>In support of that, <del>Facebook</del> Meta has an <a href="https://engineering.fb.com/2022/11/16/culture/meta-code-review-time-improving/">interesting approach</a> of “poking” engineers for code review and I think the journal fits in the same approach as a softer, easier-to-implement version of it.</p>
+
+<h3 id="-transparency">🪟 Transparency</h3>
+
+<blockquote>
+  <p><strong>I’ve been asked recently to invite additional managers to our dailies, as other teams do, and as answer, I’ve just forwarded a simple link to our journal (and handbook, but this is another story).</strong></p>
+</blockquote>
+
+<p>Having a journal indirectly brings transparency and lets the team talk for itself.</p>
+
+<p>There’s no need to invite anyone to anything or explain how the team works because is everything written there: the feelings of the team, the way of working, the blockers and the progress; everything is perceivable from the journal and can be backtracked.</p>
+
+<p>Additionally, we can support an indefinite number of additional observers without the need of disrupting our processes with “guests”.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>Since we adopted the remote journal we haven’t looked back to the daily and there’s no intention to.</p>
+
+<p>In addition to some good points that I’ve explained in <a href="/blog/2022/09/02/Daily-Journal.html">Why remote daily sucks - Try remote journal</a> others came out during this year.</p>
+
+<p>As I’ve invited in the last post, the best way to know if it’s the right tool is to try it.</p>
+
+<p>If you fancy an exchange of opinions or knowing more about it, feel free to reach out to me.</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[This is a follow-up post to Why remote daily sucks - Try remote journal one year after adopting the remote journal in my team.]]></summary></entry><entry><title type="html">Remote work yays and nays</title><link href="https://marcopolita.me/blog/blog/2023/01/23/Remote-work-yays-and-nays.html" rel="alternate" type="text/html" title="Remote work yays and nays" /><published>2023-01-23T00:00:00+00:00</published><updated>2023-01-23T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2023/01/23/Remote-work-yays-and-nays</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2023/01/23/Remote-work-yays-and-nays.html"><![CDATA[<p>I like working remotely.</p>
+
+<p>And I can’t imagine going back to work exclusively in-place, that’s something that doesn’t make any sense to me.</p>
+
+<p>But not everything is perfect and of course for the YAYs that working remotely brings, there are also some NAYs.</p>
+
+<h2 id="yays">YAYs</h2>
+
+<h3 id="my-life-my-time">My life, my time</h3>
+
+<p>I’m feeling like spending time for doing something, sometimes useful, and not only for being somewhere and being paid for it, or being controlled.</p>
+
+<p>Also, I feel that my daughter is growing next to me and not just during the time I’m home from the office.</p>
+
+<p>Working from home makes me feel like to be part of the family and that my work comes after, not the reverse.</p>
+
+<h3 id="lunchtime">Lunchtime</h3>
+
+<p>Preparing my food and taking a real break for lunch it’s a pleasure and helps detach.</p>
+
+<p>Even better if I can do it with my family; and if at any time I want to have lunch outside, I don’t need to necessarily stick in the office neighborhood so that I can be back in time for whatever.</p>
+
+<h3 id="my-perfect-desk">My perfect desk</h3>
+
+<p>I love my desk, I have the perfect amount of screens: My Mac’s, my main screen in landscape and the one in portrait on the side, the keyboard I want, and everything else I can wish for.</p>
+
+<p>I don’t have to ask any office management for anything.</p>
+
+<h3 id="no-commuting-time">No commuting time</h3>
+
+<p>In my first job, I used to commute around 40 mins each way by bus. When I didn’t have to commute 2 hours by car.</p>
+
+<p>With time I’ve learned to leverage that time by reading, listening to music, or simply sleeping.</p>
+
+<p>I’m happy that I don’t need to do that anymore and I have control of that time.</p>
+
+<h3 id="working-from-anywhere">Working from anywhere</h3>
+
+<p>Even tho I’m affectionate to my space, I love the opportunity of being able to work from almost wherever I want at any time. It’s another thing that makes me feel that is not my job controlling my life but the reverse.</p>
+
+<h2 id="nays">NAYs</h2>
+
+<h3 id="not-so-many-humans">Not so many humans</h3>
+
+<p>It’s almost impossible to create connections with colleagues, and even less friendships.</p>
+
+<p>Everyone tends to stay in his remote work bubble, fully focusing or taking care of his life, and creating connections in the workplace becomes a secondary aspect.</p>
+
+<p>Some of the nicest people that I have the luck to call friends are from my first job, and even if for sure being younger played a big factor in creating these connections, for sure also sharing time in the same place did.</p>
+
+<p>And let go of any initiative for creating connections in a remote environment, I think zoom Christmas parties are dystopia’s material.</p>
+
+<h3 id="real-time-meetings">Real-time meetings</h3>
+
+<p>Unfortunately or for good, synchronous meetings are still a necessary tool for collaboration, and being used to a fully remote environment makes them feel even more demanding and less appealing.</p>
+
+<h3 id="no-bike-commuting-time">No bike commuting time</h3>
+
+<p>If commuting for long periods can be horrible, living in a big, flat, and bike-safe city allows commuting by bike for a decent amount of time.</p>
+
+<p>Is a nice way to keep yourself in shape without requiring too much willpower. That’s something that I miss.</p>
+
+<h3 id="work-timefree-time-separation">Work-time/free-time separation</h3>
+
+<p>It’s difficult to fully separate from work if you don’t have a dedicated working space</p>
+
+<p>Even harder if the space that you use for work is also used for your hobbies; then it’s when you start dreaming of unrealistic living places.</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[I like working remotely.]]></summary></entry><entry><title type="html">Why remote daily sucks - Try remote journal</title><link href="https://marcopolita.me/blog/blog/2022/09/02/Daily-Journal.html" rel="alternate" type="text/html" title="Why remote daily sucks - Try remote journal" /><published>2022-09-02T00:00:00+00:00</published><updated>2022-09-02T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2022/09/02/Daily-Journal</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2022/09/02/Daily-Journal.html"><![CDATA[<p>Recently I’ve started leading a small engineering team of 4.</p>
+
+<p>This team was formed anew and in a remote working context and given the novelty of it, I took the occasion for rethinking some team-working approaches including the infamous remote daily.</p>
+
+<p>For having a common ground, the remote daily is the transposition, in form of a video call, of the classic daily or standup.</p>
+
+<h2 id="why-remote-daily-sucks">Why remote daily sucks</h2>
+
+<h3 id="collaborative-messaging-systems">Collaborative messaging systems</h3>
+
+<p>Dailies require people to interrupt whatever they are doing for attending a meeting to explain what they are doing.</p>
+
+<p>This made a lot of sense when our workflows didn’t include collaborative messaging tools like Slack or MS Teams.</p>
+
+<p>Those tools allow us to stay connected constantly to a flow of information from every corner of an organization and to asynchronously communicate with whoever just by dropping a message.</p>
+
+<p>With such tools and approaches to communication, having a synchronous meeting where people should not discuss things but just report states seems quite a waste of time and concentration.</p>
+
+<h3 id="fear-of-missing-a-meeting">Fear of missing a meeting</h3>
+
+<p>In a remote organization, it’s easy to imagine that someone is not doing his part.</p>
+
+<p>And because of that, it’s even easier to imagine that someone else is thinking the same about us.</p>
+
+<p>The statement “you don’t have to attend a meeting if we don’t see value in it” has a different meaning depending on the hygiene of workplace culture.</p>
+
+<p>Somewhere and/or for someone a meeting can be perceived as a way to report in, despite any good intention.</p>
+
+<p>And this one happens every day.</p>
+
+<h3 id="time-management">Time management</h3>
+
+<p>People doing creative jobs know the importance of <a href="https://www.psychologytoday.com/us/basics/flow">flow</a>.</p>
+
+<p>By setting a meeting not only the flow is damaged by an interruption but it requires an additional recovery time for regaining it.</p>
+
+<p>One of the reasons for which dailies are usually planned at the end or the beginning of the working day is to be as close as possible to a time in which people didn’t reach flow.</p>
+
+<p>But in a remote environment, the differences between individual working habits are even more enhanced, making the flow interruption even more probable.</p>
+
+<p>You can have a shared agreement but that would still feel like a compromise for the sake of a meeting and not something in defense of flow.</p>
+
+<h3 id="lost-information">Lost information</h3>
+
+<p>Remote dailies usually are not recorded and the information transmitted there stays only between the sender and the recipient and only if the headphones/microphones worked fine and the recipient was giving attention.</p>
+
+<p>It could easily happen that people misunderstand or need to communicate information in different ways, having to rely on the previously mentioned messaging systems.</p>
+
+<p>Additionally, only the attendants to such meetings can benefit from it, leaving whoever wasn’t able to attend in obscurity, needing further communication and creating more frustration by the need of repeating things that have been already transmitted somewhere else.</p>
+
+<p>In the Tech world, a lot of importance is given to documentation of any kind, why should the daily be exempted from it?</p>
+
+<h2 id="the-value-of-synchronizing-a-team">The value of synchronizing a team</h2>
+
+<p>There’s value in having a synchronized team that shares visibility on what each other is doing.</p>
+
+<p>Someone might be blocked on a problem that someone else can solve or that someone is working on the same thing as someone else.</p>
+
+<p>As a person responsible for allowing my team to do their best job, I wanted to find a way to keep the synchronization strong without all the problems that a remote daily introduces.</p>
+
+<h2 id="introducing-daily-journal">Introducing Daily Journal</h2>
+
+<p>In the past, I had the pleasure to work with an amazing eXtreme Programming team that used to journal at the end of its working day.</p>
+
+<p>We needed a way to communicate with other people other than ourselves, Slack didn’t exist back then and publishing our journal on an internal wiki worked perfectly for that purpose.</p>
+
+<p>I’ve decided then to propose a similar tool to my new team in the form of a single, collaborative, Google document.</p>
+
+<p>Each team member fills their entry at the beginning of each day by answering the following questions:</p>
+
+<ul>
+  <li>What did I do yesterday?</li>
+  <li>Am I blocked with anything?</li>
+  <li>What will I do today?</li>
+</ul>
+
+<p>The advantages of such an approach became quickly evident:</p>
+
+<h3 id="recording-history">Recording history</h3>
+
+<p>Having a single, searchable document allows recalling of what happened on any day, simplifies radically the “recovery time” after a holiday or a sick leave and prevents losing information.</p>
+
+<p>Not being blended with a chat simplifies this mechanism without any real cost.</p>
+
+<h3 id="ordering-ideas">Ordering ideas</h3>
+
+<p>Journaling is an excellent way for ordering ideas and the daily journal helps the writer and the reader as well.</p>
+
+<h3 id="no-need-for-a-quiet-place">No need for “a quiet place”</h3>
+
+<p>The daily journal doesn’t require interrupting whatever one is doing or changing wherever one is working from for connecting in a meeting.</p>
+
+<p>It helps to keep the flow, which is an important thing that a team lead should defend.</p>
+
+<h3 id="allows-more-detailed-information">Allows more detailed information</h3>
+
+<p>By having a document dedicated to collecting daily insights, it can be also a space for triggering conversations on other channels and for sharing information.</p>
+
+<p>Also, hyperlinks are pretty neat.</p>
+
+<h3 id="transparent">Transparent</h3>
+
+<p>Being a shareable document means that whoever is interested in the state of the things of a team can simply open it at any moment and read the evolution of the work.</p>
+
+<p>Our stakeholders weren’t ever interested to such a degree in our internalities, but if necessary, the document is public and reachable from our channels.</p>
+
+<h2 id="our-experience-and-conclusions">Our experience and conclusions</h2>
+
+<p>Since the very first days of adoption, the team preferred the daily journal a lot over the remote daily.</p>
+
+<p>It helped us in quickly onboard our first new team member because it served additionally as a tool for transmitting our team working culture.</p>
+
+<p>To those who might think that avoiding having a daily meeting face-to-face might yield to team alienation, I can suggest focusing on different tools for keeping people connected other than a meeting conceived with the goal of status synchronization.</p>
+
+<p>In our case we have a private chat for developers only where everyone is free to write whatever might cross their mind, it’s a nice way to vent out and keeps the team cohesive.</p>
+
+<p>If you are responsible for defining an engineering team process or simply a member, I’d invite you to give it a chance for some time and see how it works.</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[Recently I’ve started leading a small engineering team of 4.]]></summary></entry><entry><title type="html">Team Smells</title><link href="https://marcopolita.me/blog/blog/2021/11/23/team-smells.html" rel="alternate" type="text/html" title="Team Smells" /><published>2021-11-23T00:00:00+00:00</published><updated>2021-11-23T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/11/23/team-smells</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/11/23/team-smells.html"><![CDATA[<p>This is my second post about development teams and the problems I’ve spotted by working with various of them.</p>
+
+<p><a href="/blog/2021/11/19/How-to-team.html">This is the first</a>.</p>
+
+<p>This time I wanted to be more pragmatic than in the previous and try to identify some team smells.</p>
+
+<p>The term “team smell” is a deliberate homage to “<a href="http://wiki.c2.com/?CodeSmell">Code Smell</a>” of agile memory.</p>
+
+<p>With this word, I wanted to expose some of what I think are symptoms of problems that could lead a development team to generate frustration and inefficiency.</p>
+
+<h2 id="team-smells">Team smells</h2>
+
+<h3 id="overcrowded-meeting-or-sorry-i-wasnt-listening"><strong>“Overcrowded meeting”</strong> or <strong>“Sorry, I wasn’t listening”</strong></h3>
+
+<p>This usually happens when the team is composed of more than 5 people that need to communicate together constantly, communication is slow, and information is lost.</p>
+
+<p>A small team is an efficient team, and growing it will most likely render it slower and less productive.</p>
+
+<p>This could be a symptom of a business desire to increase productivity. Any tech knows that it’s instead the classic “9 women can deliver a baby in 1 month” thinking problem.</p>
+
+<p>In a remote-working environment, I like to call it the <strong>“Too many squares in this call”</strong> smell.</p>
+
+<h3 id="the-smell-of-new-old-project-in-the-morning"><strong>“The smell of New-Old Project in the morning”</strong></h3>
+
+<p>When most of the team members are new-joiners on a project that is stable and active, it could be a symptom of high churn rate and team unhappiness. Maybe also of the whole organization.</p>
+
+<p>It could happen if a project has been developed by external consultants and now is fully taken care internally. In that case, this smell should be considered as a red flag that requires a team to take its time to “make itself comfortable” on a project.</p>
+
+<h3 id="deploy-and-run-or-ill-write-a-bug-ticket-for-it"><strong>“Deploy and run”</strong> or <strong>“I’ll write a bug ticket for it”</strong></h3>
+
+<p>A team that “deploys and runs” is not responsible for its bugs and its project deployment. It could indicate a cluttered pipeline, a misunderstood definition of done, and tolerance for an unstable, unreliable system.</p>
+
+<p>It could hide “delivery rush”, “feature creep” and everything that pushes an “always forward” mentality.</p>
+
+<h3 id="all-good-for-me"><strong>“All good for me”</strong></h3>
+
+<p>This smell is perceivable when, during project-related meetings, most people don’t have anything to say or any question.</p>
+
+<p>It could hide a blaming mentality or a condition for which people don’t feel comfortable in sharing and asking questions, impeding the discovery process and even hiding information.</p>
+
+<h3 id="rushy-dailies"><strong>“Rushy dailies”</strong></h3>
+
+<p>Since I remember, the most effective dailies were the ones with the fewest rules.</p>
+
+<p>Dailies have to be informal and be effective, short meetings for syncing everyone who needs to be synced.
+The ritual itself could be a waste of time if the team uses other means to communicate its state.</p>
+
+<p>The dailies are another tool in the team’s toolbelt. If they are useless, then the team should be free to drop them.</p>
+
+<p>What would happen if your team decides that the daily is useless?</p>
+
+<h3 id="i-want-this-technology-or-put-me-this-ab-test-tag-here"><strong>“I want this technology”</strong> or <strong>“Put me this a/b test tag here”</strong></h3>
+
+<p>This happens when a team is requested to implement specific technologies without being consulted first and without knowing why.</p>
+
+<p>The reason could be related to an “always yes” attitude of the team to accept any ticket is given, but also to an established wrong way of collaboration between client and the team itself.</p>
+
+<p>Also, this could happen if the team lacks a pragmatic approach to problems, focusing on the way to solve the problem more than the outcome.</p>
+
+<h3 id="could-you-write-a-ticket-for-us-or-fing-jira"><strong>“Could you write a ticket for us?”</strong> or <strong>“F***ing Jira”</strong></h3>
+
+<p>Tickets are a way to represent a desire and to define a minimal unit of delivery.</p>
+
+<p>Some tickets could also come from the team itself as a way to give visibility to its process and plan it.</p>
+
+<p>Delegating the tickets writing to a third party outside the team could hide the incapability to contribute to its activities or express its needs. The “Alienation of labor”.</p>
+
+<p>It could also hide an excessively complex planning process that the team doesn’t fully understand. That’s a tool like any other, and the team should be able to change it however is effective to it</p>
+
+<h3 id="its-red-its-fine-or-we-usually-dont-care-for-that-test"><strong>“It’s red, it’s fine”</strong> or <strong>“We usually don’t care for that test”</strong></h3>
+
+<p>If a team works with a CI that includes a suite of tests that are too often failing, it could mean that the team doesn’t control it.</p>
+
+<p>Sometimes is about skills that can be acquired, but it could hide a top-down influence on the tool choice.</p>
+
+<p>A team should be able to decide for itself what’s the best tool for the job, often could be a well-known tool, but if it’s broken, then it’s useless.</p>
+
+<h3 id="i-just-picked-it-from-the-top-of-the-backlog-or-i-dont-know-what-to-do-next"><strong>“I just picked it from the top of the backlog”</strong> or <strong>“I don’t know what to do next”</strong></h3>
+
+<p>If a team doesn’t know its backlog, it’s not in control of its process.</p>
+
+<p>Knowledge is fundamental for the effectiveness of a team and also being able to decide what makes sense and what doesn’t.</p>
+
+<p>A team should not only build artifacts, should fully contribute to their development with its knowledge.</p>
+
+<h2 id="conclusions">Conclusions</h2>
+
+<p>I think every organization involving software development might have its own particular team smells. These are some that I’ve been able to recognize.</p>
+
+<p>Please feel free to let me know what do you think about these and if you have any idea for different team smells. The more we are aware of them, the more we’ll be able to fix the problems behind.</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[This is my second post about development teams and the problems I’ve spotted by working with various of them.]]></summary></entry><entry><title type="html">How to team</title><link href="https://marcopolita.me/blog/blog/2021/11/19/How-to-team.html" rel="alternate" type="text/html" title="How to team" /><published>2021-11-19T00:00:00+00:00</published><updated>2021-11-19T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/11/19/How-to-team</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/11/19/How-to-team.html"><![CDATA[<p>In my career, I had the chance to change teams, work through different processes multiple times, and experience some pain on the topic of team working.</p>
+
+<p>Although some of these processes and teams claimed to be agile-oriented and with a certain kind of established processes, not all of them were successful in the basic goal of consistently delivering value to their stakeholders.</p>
+
+<p>Some teams were inducing a degree of frustration in their members which led many times to problems in the code and made the working days just unbearable.</p>
+
+<p>So I wanted to start a mini-series of posts on what I learned so far about “How to team” and how I think a software development team should look.</p>
+
+<h2 id="it-takes-care-of-itself">It takes care of itself</h2>
+<p>This team takes care of itself without expecting someone else external to do that.</p>
+
+<p>This team values its independence and improves its way of working autonomously by using ingenuity and any other necessary instrument.</p>
+
+<p>Such a team needs to have continuous, honest communication on what is important for its members and to be ready to let go the rest.</p>
+
+<h3 id="some-of-the-blocks-that-prevent-a-team-from-taking-care-of-itself">Some of the blocks that prevent a team from taking care of itself</h3>
+<ul>
+  <li>Keeping the client and its feedback far from the team slows down the self-improvement cycle</li>
+  <li>Having external team management trying to control the teams’ activity</li>
+  <li>Periodically splitting the team in order to distribute knowledge</li>
+  <li>Imposing tools and practices because “that’s the way”</li>
+</ul>
+
+<h2 id="its-honest-with-its-clientsstakeholders-and-values-their-trust">It’s honest with its clients/stakeholders and values their trust</h2>
+<p>Delivering consistently, reliably and taking care of its artifacts is the currency that the team spends for buying the client’s trust.</p>
+
+<p>This also means that the team doesn’t commit to or promise something that cannot be realistically delivered, might be a date or a long-term plan, in order to not create expectations that cannot be maintained.</p>
+
+<p>This team establishes a contract with its clients. It defines how to work with it, how to make requests, how to review its job, and so on.</p>
+
+<p>It doesn’t have to hide its progress or be ashamed of its mistakes.</p>
+
+<p><strong>It’s a team that is open to observation but closed to influences that might damage the effectiveness of its process</strong></p>
+
+<h3 id="what-makes-this-difficult">What makes this difficult</h3>
+<ul>
+  <li>Not knowing the team’s velocity because it’s the only way to not under and overcommit.</li>
+  <li>Accepting external estimates, delivery dates, or roadmaps</li>
+  <li>Having team’s management that doesn’t consult with the team itself</li>
+</ul>
+
+<h2 id="cares-for-its-artifacts">Cares for its artifacts</h2>
+<p>This team considers quality as something important to every and each of its artifacts.</p>
+
+<p>It establishes for itself which parts require more attention and when the quality is satisfying.</p>
+
+<p>It tries to expose its artifacts to the client as soon as possible and receives and considers feedback in the same fashion.</p>
+
+<p><strong>It’s a team that tackles the creative process frustration and sharpens the tools of its art for preventing it</strong></p>
+
+<h3 id="when-this-doesnt-happen">When this doesn’t happen</h3>
+<ul>
+  <li>When the team shares its workspace/codebase with too many different teams/individuals, which could bring a lack of sense of ownership.</li>
+  <li>When the team doesn’t take ownership of the delivery.</li>
+  <li>If the team is not considered responsible for the artifacts’ maintenance.</li>
+  <li>The team is rushed towards delivery and is not trusted in its estimations</li>
+</ul>
+
+<p>These, in my opinion, are the essentials on which everything could be built.</p>
+
+<p>I’m aware that some of these points are quite general and could fit or be against potentially any situation.</p>
+
+<p>I’ll come to something more pragmatic in a later post: “Team Smells”</p>
+
+<p>Let me know your opinion in the comments (you need to accept the cookies in order to display the comments section) or in any other way you would like to share it.</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[In my career, I had the chance to change teams, work through different processes multiple times, and experience some pain on the topic of team working.]]></summary></entry><entry><title type="html">Today I Learned: How to get your current OTP version</title><link href="https://marcopolita.me/blog/blog/2021/09/15/Today-I-Learned-How-to-get-your-current-OTP-version.html" rel="alternate" type="text/html" title="Today I Learned: How to get your current OTP version" /><published>2021-09-15T00:00:00+00:00</published><updated>2021-09-15T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/09/15/Today-I-Learned-How-to-get-your-current-OTP-version</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/09/15/Today-I-Learned-How-to-get-your-current-OTP-version.html"><![CDATA[<p>You can get your current OTP version, if Erlang is installed on your machine, by using:</p>
+
+<pre><code class="language-Erlang">4&gt; file:read_file(filename:join([code:root_dir(), "releases", erlang:system_info(otp_release), "OTP_VERSION"])).
+{ok,&lt;&lt;"24.0.2\n"&gt;&gt;}
+</code></pre>
+
+<p>Or in Elixir:</p>
+
+<pre><code class="language-Elixir">iex(3)&gt; :filename.join([:code.root_dir(), "releases", :erlang.system_info(:otp_release), "OTP_VERSION"])  |&gt; File.read
+{:ok, "24.0.2\n"}
+</code></pre>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[You can get your current OTP version, if Erlang is installed on your machine, by using:]]></summary></entry><entry><title type="html">A day on the WikiWikiWeb</title><link href="https://marcopolita.me/blog/blog/2021/03/25/A-day-on-the-WikiWikiWeb.html" rel="alternate" type="text/html" title="A day on the WikiWikiWeb" /><published>2021-03-25T00:00:00+00:00</published><updated>2021-03-25T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/03/25/A-day-on-the-WikiWikiWeb</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/03/25/A-day-on-the-WikiWikiWeb.html"><![CDATA[<p>Today I spent a good chunk of my day reading articles on <a href="https://en.wikipedia.org/wiki/WikiWikiWeb">WikiWikiWeb</a>, the first Wiki ever.</p>
+
+<p>Here some of the ones that mostly resonated with me:</p>
+
+<blockquote>
+  <p>“You can ChangeYourOrganization or ChangeYourOrganization.” – MartinFowler</p>
+</blockquote>
+
+<ul>
+  <li><a href="https://wiki.c2.com/?ChangeYourOrganizationDiary">The excellent diary from James Shore</a> on how to bring XP in a non-agile organisation, pairs well with 
+<a href="https://wiki.c2.com/?ChangeYourOrganizationTactics">Tactics</a></li>
+</ul>
+
+<blockquote>
+  <p>“Management puts you in a tank. You stay in that tank. Life is an illusion. Management is an illusion. Once you realize this, you can jump twenty feet in the air, dodge bullets, and generally Get Things Done.”</p>
+</blockquote>
+
+<ul>
+  <li><a href="https://wiki.c2.com/?MatrixManagement">The perilious Matrix Management</a> that is reflected by the existence of so many staff engineers and Product-something</li>
+</ul>
+
+<blockquote>
+  <p>It is easy for other people to recognize a ChronicComplainer, but the complainers don’t recognize themselves as such.</p>
+</blockquote>
+
+<ul>
+  <li>
+    <p>The brutal honesty of <a href="https://wiki.c2.com/?ChronicComplainer">Chronic complainer</a></p>
+  </li>
+  <li>A simple view point of what I used to call “the coffee machine communication” in <a href="https://wiki.c2.com/?SerendipitousCommunication">SerendipitousCommunication</a></li>
+  <li>How certain terms used in the industry have started being adopted like <a href="https://wiki.c2.com/?SilverBullet">SilverBullet</a></li>
+</ul>
+
+<p>I suggest any person interested in Agile methodologies and/or Extreme Programming to have a ride on this ideas train and breath some of the good stuff that yield to the <a href="https://agilemanifesto.org/">Agile Manifesto</a>, which is still one of the best things that happened in the way of conceiving our profession.</p>
+
+<p>Choo Choo</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[Today I spent a good chunk of my day reading articles on WikiWikiWeb, the first Wiki ever.]]></summary></entry><entry><title type="html">Today I learned: Elixir and using environment variables with attributes</title><link href="https://marcopolita.me/blog/blog/2021/03/09/Today-I-learned-Elixir-and-using-environment-variables-with-attributes.html" rel="alternate" type="text/html" title="Today I learned: Elixir and using environment variables with attributes" /><published>2021-03-09T00:00:00+00:00</published><updated>2021-03-09T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/03/09/Today-I-learned-Elixir-and-using-environment-variables-with-attributes</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/03/09/Today-I-learned-Elixir-and-using-environment-variables-with-attributes.html"><![CDATA[<p>Considering the following code snippet:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">defmodule</span> <span class="no">Variables</span> <span class="k">do</span>
+  <span class="nv">@variable</span> <span class="no">Application</span><span class="o">.</span><span class="n">get_env</span><span class="p">(</span><span class="ss">:an_application</span><span class="p">,</span> <span class="ss">:variable</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="n">get_compiled</span> <span class="k">do</span>
+    <span class="nv">@variable</span>
+  <span class="k">end</span>
+
+  <span class="k">def</span> <span class="n">get_runtime</span> <span class="k">do</span>
+    <span class="no">Application</span><span class="o">.</span><span class="n">get_env</span><span class="p">(</span><span class="ss">:an_application</span><span class="p">,</span> <span class="ss">:variable</span><span class="p">)</span>
+  <span class="k">end</span>
+<span class="k">end</span>
+</code></pre></div></div>
+
+<p>with the following mix config file:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kn">import</span> <span class="no">Config</span>
+
+  <span class="n">config</span> <span class="ss">:an_application</span><span class="p">,</span> <span class="ss">variable:</span> <span class="no">System</span><span class="o">.</span><span class="n">get_env</span><span class="p">(</span><span class="s2">"VARIABLE"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>when we do:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="nv">VARIABLE</span><span class="o">=</span><span class="s2">"666"</span> mix compile
+  iex <span class="nt">-S</span> mix
+  iex<span class="o">(</span>1<span class="o">)&gt;</span> Variables.get_compiled
+  <span class="s2">"666"</span>
+  iex<span class="o">(</span>2<span class="o">)&gt;</span> Variables.get_runtime
+  nil
+</code></pre></div></div>
+
+<p>but when we do:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  mix compile <span class="nt">--force</span>
+  <span class="nv">VARIABLE</span><span class="o">=</span><span class="s2">"666"</span> iex <span class="nt">-S</span> mix
+  iex<span class="o">(</span>1<span class="o">)&gt;</span> Variables.get_compiled
+  nil
+  iex<span class="o">(</span>2<span class="o">)&gt;</span> Variables.get_runtime
+  <span class="s2">"666"</span>
+</code></pre></div></div>
+
+<p>Because <code class="language-plaintext highlighter-rouge">@variable</code> is initialized at compilation time.</p>
+
+<p>Lesson learned: use attributes only for variables that are statically set in config, for the rest like variables set with environment variables, define a function</p>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[Considering the following code snippet:]]></summary></entry><entry><title type="html">Today I learned: Funny things with the bash</title><link href="https://marcopolita.me/blog/blog/2021/02/18/Today-I-learned-Funny-things-with-the-bash.html" rel="alternate" type="text/html" title="Today I learned: Funny things with the bash" /><published>2021-02-18T00:00:00+00:00</published><updated>2021-02-18T00:00:00+00:00</updated><id>https://marcopolita.me/blog/blog/2021/02/18/Today-I-learned-Funny-things-with-the-bash</id><content type="html" xml:base="https://marcopolita.me/blog/blog/2021/02/18/Today-I-learned-Funny-things-with-the-bash.html"><![CDATA[<p>Thanks to the excellent video <a href="https://www.youtube.com/watch?v=N8up3OxfnCQ">Kata in Bash</a> from <a href="http://andreafrancia.it/">Andrea Francia</a>, where he creates from scratch a mini testing framework for Bash, today I learned some things:</p>
+
+<h2 id="do-you-know">Do you know:</h2>
+<h3 id="-how-to-split-multiple-inputs-in-a-string-space-separated-with-a-one-liner">👉 how to split multiple inputs in a string, space separated, with a one-liner?</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nb">read</span> <span class="nt">-ra</span> numbers <span class="o">&lt;&lt;&lt;</span> <span class="s2">"1 2"</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="k">$((</span>numbers[0]+numbers[1]<span class="k">))</span><span class="s2">"</span>
+
+<span class="c"># returns 2</span>
+</code></pre></div></div>
+
+<p>or comma separated</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">#!/bin/bash</span>
+
+<span class="nv">IFS</span><span class="o">=</span>, <span class="nb">read</span> <span class="nt">-ra</span> numbers <span class="o">&lt;&lt;&lt;</span> <span class="s2">"1,2"</span>
+<span class="nb">echo</span> <span class="s2">"</span><span class="k">$((</span>numbers[0]+numbers[1]<span class="k">))</span><span class="s2">"</span>
+
+<span class="c"># returns 2</span>
+</code></pre></div></div>
+
+<h3 id="-how-to-create-a-temporary-file-which-will-be-automatically-destroyed">👉 how to create a temporary file which will be automatically destroyed?</h3>
+
+<p>This is useful for those commands which require files as inputs, for example <code class="language-plaintext highlighter-rouge">diff</code></p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> diff &lt;<span class="o">(</span><span class="nb">echo</span> <span class="s2">"something"</span><span class="o">)</span> &lt;<span class="o">(</span><span class="nb">echo</span> <span class="s2">"something_else"</span><span class="o">)</span>
+1c1
+&lt; something
+<span class="nt">---</span>
+<span class="o">&gt;</span> something_else
+</code></pre></div></div>
+<p>It relies on <a href="https://www.gnu.org/software/bash/manual/bash.html#Process-Substitution">Process Substitution</a></p>
+
+<h3 id="-that-true-and-false-are-commands">👉 that True and False are commands?</h3>
+<p><code class="language-plaintext highlighter-rouge">true</code> always succeeds, <code class="language-plaintext highlighter-rouge">false</code> always fails</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="o">&gt;</span> <span class="nb">true</span>
+<span class="o">&gt;</span> <span class="nb">echo</span> <span class="nv">$?</span>
+0
+
+<span class="o">&gt;</span> <span class="nb">false</span>
+<span class="o">&gt;</span> <span class="nb">echo</span> <span class="nv">$?</span>
+1
+</code></pre></div></div>]]></content><author><name>Marco &quot;Efesto&quot; Polita</name></author><summary type="html"><![CDATA[Thanks to the excellent video Kata in Bash from Andrea Francia, where he creates from scratch a mini testing framework for Bash, today I learned some things:]]></summary></entry></feed>

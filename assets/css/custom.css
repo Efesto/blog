@@ -1,0 +1,22 @@
+.mbticode {
+    display: block;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    padding-top: 85px;
+    background: black;
+    margin: 0 0;
+    color: white;
+    font-size: 64px;
+    font-family: monospace;
+}
+
+.dark .mbticode {
+    background: white;
+    color: black;
+}
+
+.cols {
+    display: grid;
+}

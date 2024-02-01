@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="">
+<link rel="stylesheet" type="text/css" href="/blog/assets/css/custom.css" />
+
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link href="https://fonts.googleapis.com/css?family=Merriweather:300|Raleway:400,700" rel="stylesheet">
+<link rel="stylesheet" href="/blog/assets/css/style.css">
+<title>Today I learned: How to display erlang code from beam file</title>
+<!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Today I learned: How to display erlang code from beam file | A frustration driven dev blog - Marco Polita</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Today I learned: How to display erlang code from beam file" />
+<meta name="author" content="Marco "Efesto" Polita" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Original source" />
+<meta property="og:description" content="Original source" />
+<link rel="canonical" href="https://marcopolita.me/blog/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam.html" />
+<meta property="og:url" content="https://marcopolita.me/blog/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam.html" />
+<meta property="og:site_name" content="A frustration driven dev blog - Marco Polita" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2020-03-09T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Today I learned: How to display erlang code from beam file" />
+<script type="application/ld+json">
+{"author":{"@type":"Person","name":"Marco \"Efesto\" Polita"},"description":"Original source","url":"https://marcopolita.me/blog/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam.html","@type":"BlogPosting","headline":"Today I learned: How to display erlang code from beam file","dateModified":"2020-03-09T00:00:00+00:00","datePublished":"2020-03-09T00:00:00+00:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://marcopolita.me/blog/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam.html"},"@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+<script type="text/javascript" src="/blog/assets/js/darkmode.js"></script>
+
+</head><body>
+  <main class="container">
+    <section class="about">
+      <div class="about-header ">
+        <div class="about-title">
+          <a href="/blog/"></a>
+          
+          <img src="/blog/assets/images/me.png" alt="Marco 'Efesto' Polita" />
+          
+          </a>
+          <h2 id="title">
+            <a href="/blog/">Marco 'Efesto' Polita</a>
+          </h2>
+        </div><p class="tagline">Frustration driven software developer.</p></div>
+      
+      <nav class="navigation about-footer ">
+        <ul>
+          
+          <li>
+            <a href="/blog/about">Manual</a>
+          </li>
+          
+          <li>
+            <a href="/blog/reading_list">Reading List</a>
+          </li>
+          
+        </ul>
+      </nav><ul class="social about-footer "><a href="https://github.com/Efesto" target="_blank">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://www.linkedin.com/in/marco-polita-4a70891b" target="_blank">
+          <li>
+            <i class="icon-linkedin-squared"></i>
+          </li>
+        </a></ul><div class="about-footer ">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle" onclick="return false;">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div><p class="about-footer ">Made with <a href="https://jekyllrb.com/">Jekyll</a> with 
+      <a href="https://github.com/samarsault/plainwhite-jekyll">Plainwhite</a> theme</p>
+      
+    </section>
+    <section class="content">
+      <div class="post-container">
+  <a class="post-link" href="/blog/2020/03/09/today-i-learn-how-to-display-erlang-code-from-beam.html">
+    <h2 class="post-title">Today I learned: How to display erlang code from beam file</h2>
+  </a>
+  <div class="post-meta">
+    <div class="post-date">Mar 9, 2020</div></div>
+  <div class="post">
+    <p><a href="https://reverseengineering.stackexchange.com/questions/16661/erlang-source-file-generation-from-beam-file">Original source</a></p>
+
+<p>The following code has been adapted to be executed from an <code class="language-plaintext highlighter-rouge">IEX</code> shell:</p>
+
+<div class="language-elixir highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">module_to_inspect</span> <span class="o">=</span> <span class="o">&lt;</span><span class="n">module_to_inspect</span><span class="o">&gt;</span>
+<span class="n">path</span> <span class="o">=</span> <span class="ss">:code</span><span class="o">.</span><span class="n">which</span><span class="p">(</span><span class="n">module_to_inspect</span><span class="p">)</span>
+<span class="p">{</span><span class="n">ok</span><span class="p">,{</span><span class="n">_</span><span class="p">,[{</span><span class="n">abstract_code</span><span class="p">,{</span><span class="n">_</span><span class="p">,</span><span class="n">ac</span><span class="p">}}]}}</span> <span class="o">=</span> <span class="ss">:beam_lib</span><span class="o">.</span><span class="n">chunks</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="p">[</span><span class="ss">:abstract_code</span><span class="p">])</span>
+<span class="ss">:erl_prettypr</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="ss">:erl_syntax</span><span class="o">.</span><span class="n">form_list</span><span class="p">(</span><span class="n">ac</span><span class="p">))</span> <span class="o">|&gt;</span> <span class="no">IO</span><span class="o">.</span><span class="n">puts</span>
+</code></pre></div></div>
+
+<p>This kind of code could be useful for debugging your build pipeline and, like in my case, troubleshoot why a <code class="language-plaintext highlighter-rouge">mix</code> config file entries weren’t applied to the env</p>
+
+  </div>
+  <div class="links"></div>
+</div>
+    </section>
+    <footer class="">
+      <nav class="navigation about-footer ">
+        <ul>
+          
+          <li>
+            <a href="/blog/about">Manual</a>
+          </li>
+          
+          <li>
+            <a href="/blog/reading_list">Reading List</a>
+          </li>
+          
+        </ul>
+      </nav><ul class="social about-footer "><a href="https://github.com/Efesto" target="_blank">
+          <li>
+            <i class="icon-github-circled"></i>
+          </li>
+        </a><a href="https://www.linkedin.com/in/marco-polita-4a70891b" target="_blank">
+          <li>
+            <i class="icon-linkedin-squared"></i>
+          </li>
+        </a></ul><div class="about-footer ">
+        <p>Dark Mode
+          <i class="icon-moon"></i>
+          <label class="switch">
+            <input type="checkbox" class="dark-mode-toggle" onclick="return false;">
+            <span class="slider round" onclick="toggleDarkMode()"></span>
+          </label>
+        </p>
+      </div><p class="about-footer ">Made with <a href="https://jekyllrb.com/">Jekyll</a> with 
+      <a href="https://github.com/samarsault/plainwhite-jekyll">Plainwhite</a> theme</p>
+      
+    </footer>
+  </main>
+  
+  
+  
+  <script type="text/javascript" src="/blog/assets/js/darkmode.js"></script>
+  
+</body>
+
+</html>
